@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
+  <div style="height: 0; width: 0; position: absolute; visibility: hidden;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
   <header class="main-header">
     <div class="main-header__top">
       <div class="logo">
@@ -36,6 +38,42 @@
       <button class="main-header__scroll">Скролл вниз</button>
     </div>
   </header>
+
+  <main class="main-content">
+    <section class="features">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <ul class="features__list">
+        <li class="feature feature--speed">
+          <svg class="feature__icon feature__icon--speed">
+            <use xlink:href="#icon-speed"></use>
+          </svg>
+          <p class="feature__title">Оперативные сроки</p>
+          <p class="feature__text">Усовершенствованная логистическая система<br>позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки.</p>
+        </li>
+        <li class="feature feature--providers">
+          <svg class="feature__icon feature__icon--providers">
+            <use xlink:href="#icon-providers"></use>
+          </svg>
+          <p class="feature__title">Крупные поставщики</p>
+          <p class="feature__text">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.</p>
+        </li>
+        <li class="feature feature--secret">
+          <svg class="feature__icon feature__icon--secret">
+            <use xlink:href="#icon-secret"></use>
+          </svg>
+          <p class="feature__title feature__title--secret">Полная конфиденциальность</p>
+          <p class="feature__text feature__text--secret">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
+        </li>
+        <li class="feature feature--cost">
+          <svg class="feature__icon feature__icon--cost">
+            <use xlink:href="#icon-cost"></use>
+          </svg>
+          <p class="feature__title feature__title--cost">Персонализация стоимости</p>
+          <p class="feature__text">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить&nbsp;ту цену, которая Вас устраивает.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
 
 </body>
 </html>
