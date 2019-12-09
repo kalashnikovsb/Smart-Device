@@ -69,7 +69,7 @@
   max-width: 1410px;
   margin: auto;
   overflow: auto;
-  background: url("../img/plates-desktop.png") 100% 63% no-repeat, url("../img/header-shape-desktop.png") 89% 61% no-repeat;
+  background: url("../img/plates-desktop.png") 100% 55% no-repeat, url("../img/header-shape-desktop.svg") 90% 55% no-repeat;
   position: relative;
 }
 
@@ -177,7 +177,7 @@
   }
 
   .main-header__bottom {
-    background: url("../img/plates-tablet.png") 100% 15% no-repeat, url("../img/header-shape-tablet.png") 100% 4% no-repeat;
+    background: url("../img/plates-tablet.png") 90% 16% no-repeat, url("../img/header-shape-tablet.svg") 90% 10% no-repeat;
   }
 
   .main-header__scroll {
@@ -224,7 +224,7 @@
   }
 
   .main-header__bottom {
-    background: url("../img/plates-mobile.png") 100% 10% no-repeat, url("../img/header-shape-mobile.png") 100% 6% no-repeat;
+    background: url("../img/plates-mobile.png") 40% 20% no-repeat, url("../img/header-shape-mobile.svg") 50% 20% no-repeat;
   }
 
   .main-header__scroll {

@@ -3,6 +3,7 @@
   margin: auto;
   overflow: hidden;
   padding-top: 112px;
+  background: url("../img/triangle1.svg") 0% 0% no-repeat, url("../img/triangle2.svg") 0% 100% no-repeat, url("../img/triangle3.svg") 100% 0% no-repeat, url("../img/triangle4.svg") 100% 100% no-repeat;
 }
 
 @media (max-width: $desktop-width) {
