@@ -27,7 +27,7 @@
   border: 1px solid #ffffff;
 }
 
-.button--callback {
+.button--consultation {
   margin-left: 98px;
   font-size: 16px;
   line-height: 19px;
@@ -39,8 +39,17 @@
   background: #00b2ff;
 }
 
-.button--callback-mobile {
+.button--consultation-mobile {
   display: none;
+}
+
+.button--about {
+  padding-top: 12px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #00b2ff;
+  border: 1px solid #00b2ff;
 }
 
 @media (max-width: $desktop-width) {
@@ -48,7 +57,7 @@
     display: none;
   }
 
-  .button--callback {
+  .button--consultation {
     margin-left: 52px;
     padding-top: 17px;
     padding-bottom: 20px;
@@ -58,11 +67,11 @@
 }
 
 @media (max-width: $tablet-width) {
-  .button--callback {
+  .button--consultation {
     display: none;
   }
 
-  .button--callback-mobile {
+  .button--consultation-mobile {
     display: inline-block;
     width: 100%;
     font-size: 16px;

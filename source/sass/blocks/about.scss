@@ -1,0 +1,100 @@
+.about {
+  padding-top: 103px;
+  padding-bottom: 110px;
+  padding-left: 210px;
+  padding-right: 70px;
+  background: url("../img/number-desktop.png") 3% 54% no-repeat;
+}
+
+.about__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  color: #666666;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.about__text {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #666666;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about__text--last {
+  margin-bottom: 40px;
+}
+
+.about__dots {
+  display: none;
+}
+
+@media (max-width: $desktop-width) {
+  .about {
+    padding-top: 54px;
+    padding-bottom: 83px;
+    padding-left: 213px;
+    padding-right: 20px;
+    background: url("../img/number-tablet.png") 4% 44% no-repeat;
+  }
+
+  .about__title {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 26px;
+    margin-left: -3px;
+  }
+
+  .about__text {
+    margin-bottom: 19px;
+  }
+
+  .about__text--last {
+    margin-bottom: 43px;
+  }
+
+  .about__dots {
+    display: inline;
+  }
+
+  .about__add-text {
+    display: none;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    padding-top: 56px;
+    padding-bottom: 65px;
+    padding-left: 17px;
+    padding-right: 10px;
+    background: none;
+  }
+
+  .about__title {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 22px;
+  }
+
+  .about__text {
+    margin-bottom: 40px;
+  }
+
+  .about__text--last {
+    margin-bottom: 29px;
+  }
+
+  .about__dots {
+    display: inline;
+  }
+
+  .about__add-text {
+    display: none;
+  }
+}
