@@ -1,5 +1,5 @@
 .main-header {
-  background: #1b2d37 url("../../img/header-background.png");
+  background: #1b2d37 url("../img/header-background.png");
 }
 
 .main-header__top {
@@ -46,7 +46,7 @@
   height: 14px;
   top: 3px;
   left: 0;
-  background: url("../../img/email-desktop-icon.svg") 50% 50% no-repeat;
+  background: url("../img/email-desktop-icon.svg") 50% 50% no-repeat;
 }
 
 .main-header__link--tel {
@@ -62,14 +62,14 @@
   height: 18px;
   top: 0;
   left: 0;
-  background: url("../../img/phone-desktop-icon.svg") 50% 50% no-repeat;
+  background: url("../img/phone-desktop-icon.svg") 50% 50% no-repeat;
 }
 
 .main-header__bottom {
   max-width: 1410px;
   margin: auto;
   overflow: auto;
-  background: url("../../img/plates-desktop.png") 100% 63% no-repeat, url("../../img/header-shape-desktop.png") 89% 61% no-repeat;
+  background: url("../img/plates-desktop.png") 100% 63% no-repeat, url("../img/header-shape-desktop.png") 89% 61% no-repeat;
   position: relative;
 }
 
@@ -156,7 +156,7 @@
     height: 19px;
     padding: 0;
     margin-right: 34px;
-    background: url("../../img/email-tablet-icon.svg") 50% 50% no-repeat;
+    background: url("../img/email-tablet-icon.svg") 50% 50% no-repeat;
   }
 
   .main-header__link--email::before {
@@ -169,7 +169,7 @@
     width: 24px;
     height: 24px;
     padding: 0;
-    background: url("../../img/phone-tablet-icon.svg") 50% 50% no-repeat;
+    background: url("../img/phone-tablet-icon.svg") 50% 50% no-repeat;
   }
 
   .main-header__link--tel::before {
@@ -177,7 +177,7 @@
   }
 
   .main-header__bottom {
-    background: url("../../img/plates-tablet.png") 100% 15% no-repeat, url("../../img/header-shape-tablet.png") 100% 4% no-repeat;
+    background: url("../img/plates-tablet.png") 100% 15% no-repeat, url("../img/header-shape-tablet.png") 100% 4% no-repeat;
   }
 
   .main-header__scroll {
@@ -224,7 +224,7 @@
   }
 
   .main-header__bottom {
-    background: url("../../img/plates-mobile.png") 100% 10% no-repeat, url("../../img/header-shape-mobile.png") 100% 6% no-repeat;
+    background: url("../img/plates-mobile.png") 100% 10% no-repeat, url("../img/header-shape-mobile.png") 100% 6% no-repeat;
   }
 
   .main-header__scroll {
