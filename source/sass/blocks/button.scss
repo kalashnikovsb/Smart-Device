@@ -17,14 +17,17 @@
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
+  border: none;
 }
 
-.button:hover {
-  opacity: 0.7;
-}
-
-.button--white-border {
+.button--callback {
   border: 1px solid #ffffff;
+}
+
+.button--callback:hover,
+.button--callback:focus {
+  border: 1px solid #00b2ff;
+  color: #00b2ff;
 }
 
 .button--consultation {
@@ -43,6 +46,14 @@
   display: none;
 }
 
+.button--consultation:hover,
+.button--consultation:focus,
+.button--consultation-mobile:hover,
+.button--consultation-mobile:focus {
+  background: #ffffff;
+  color: #00b2ff;
+}
+
 .button--about {
   padding-top: 12px;
   padding-bottom: 15px;
@@ -52,8 +63,29 @@
   border: 1px solid #00b2ff;
 }
 
+.button--about:hover,
+.button--about:focus {
+  color: #ffffff;
+  background: #00b2ff;
+}
+
+.button--agree {
+  flex-shrink: 0;
+  background: #00b2ff;
+  border: 1px solid #ffffff;
+  padding-left: 79px;
+  padding-right: 79px;
+  margin-bottom: 40px;
+}
+
+.button--agree:hover,
+.button--agree:focus {
+  background: #ffffff;
+  color: #00b2ff;
+}
+
 @media (max-width: $desktop-width) {
-  .button--white-border {
+  .button--callback {
     display: none;
   }
 
@@ -63,6 +95,13 @@
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .button--agree {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    padding-left: 84px;
+    padding-right: 84px;
   }
 }
 
@@ -78,9 +117,16 @@
     line-height: 19px;
     padding-top: 17px;
     padding-bottom: 20px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 20px;
+    padding-right: 20px;
     border: none;
     background: #00b2ff;
+  }
+
+  .button--agree {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom: 22px;
   }
 }
