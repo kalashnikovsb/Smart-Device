@@ -9,6 +9,21 @@
   padding-bottom: 37px;
   padding-left: 40px;
   padding-right: 40px;
+  z-index: 2;
+}
+
+.popup__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background: url("../img/cross.svg") 50% 50% no-repeat;
+  width: 17px;
+  height: 17px;
+}
+
+.popup__close:hover,
+.popup__close:focus {
+  opacity: 0.5;
 }
 
 .popup__title {
