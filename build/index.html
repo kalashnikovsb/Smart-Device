@@ -240,10 +240,10 @@
       <input class="popup__input" type="text" name="name" id="popup-name" placeholder="Имя" required="">
       <input class="popup__input" type="tel" name="tel" id="popup-tel" placeholder="Телефон" required="">
       <textarea class="popup__textarea" required="">Ваш вопрос</textarea>
-      <button class="button button--popup" type="submit"></button>
+      <button class="button button--popup" type="submit">Отправить</button>
       <div class="popup__inner">
-        <input class="popup__checkbox" type="" name="" value="" required="">
-        <label class="popup__label">Я согласен на обработку персональных данных</label>
+        <input class="popup__checkbox visually-hidden" type="checkbox" name="agreement" value="yes" id="popup-agreement" required="">
+        <label class="popup__label" for="popup-agreement" tabindex="0">Я согласен на обработку персональных данных</label>
       </div>
     </form>
   </section>

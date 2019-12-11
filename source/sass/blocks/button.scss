@@ -84,6 +84,20 @@
   color: #00b2ff;
 }
 
+.button--popup {
+  width: 100%;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: #00b2ff;
+  margin-bottom: 35px;
+}
+
+.button--popup:hover,
+.button--popup:focus {
+  color: #00b2ff;
+  background: #ffffff;
+}
+
 @media (max-width: $desktop-width) {
   .button--callback {
     display: none;
