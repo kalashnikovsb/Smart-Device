@@ -1,5 +1,5 @@
 .contact-form {
-  background: #00b2ff;
+  background: url("../../img/plane.png") 30% 60% no-repeat, url("../../img/footer-shape.svg") 30% 60% no-repeat, url("../../img/triangle5.svg") 95% 20% no-repeat, url("../../img/triangle6.svg") 98% 100% no-repeat #00b2ff;
 }
 
 .contact-form__wrap {
@@ -142,6 +142,10 @@
 }
 
 @media (max-width: $desktop-width) {
+  .contact-form {
+    background: #00b2ff;
+  }
+
   .contact-form__wrap {
     display: block;
     max-width: none;

@@ -1,0 +1,42 @@
+.popup {
+  width: 410px;
+  position: absolute;
+  top: 136px;
+  left: 50%;
+  margin-left: -245px;
+  background: red;
+  padding-top: 28px;
+  padding-bottom: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.popup__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 28px;
+  line-height: 39px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.popup__text {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.popup__input {
+  background: white;
+  border: none;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}

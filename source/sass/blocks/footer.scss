@@ -1,0 +1,88 @@
+.footer {
+  background: red;
+}
+
+.footer__top {
+  max-width: 1418px;
+  margin: auto;
+  background: yellow;
+  padding-top: 64px;
+  padding-bottom: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+}
+
+.footer__left {
+  background: #aaaaaa;
+}
+
+.footer__center {
+  background: red;
+  width: 430px;
+  margin-left: auto;
+  margin-right: 16%;
+}
+
+.footer__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  background: white;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #1b2d37;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+
+.footer__center-inner {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__list--left {
+  background: white;
+}
+
+.footer__list--right {
+  background: gray;
+  letter-spacing: 0.03em;
+}
+
+.footer__link {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #1b2d37;
+  opacity: 0.5;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-decoration: none;
+}
+
+.footer__right {
+  max-width: 350px;
+  background: red;
+  padding-right: 5px;
+}
+
+.footer__text {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #1b2d37;
+  opacity: 0.5;
+  margin-top: 0;
+  margin-bottom: 0;
+}

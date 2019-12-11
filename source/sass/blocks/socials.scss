@@ -1,0 +1,38 @@
+.socials {
+  background: yellow;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  display: flex;
+}
+
+.socials__item {
+  margin-right: 16px;
+}
+
+.socials__link {
+  display: block;
+  border-radius: 50%;
+  background: #cdcdcd;
+  width: 27px;
+  height: 27px;
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.socials__link--vk {
+  background: url("../../img/vk.svg") 50% 50% no-repeat;
+}
+
+.socials__link--ok {
+  background: url("../../img/ok.svg") 50% 50% no-repeat;
+}
+
+.socials__link--fb {
+  background: url("../../img/fb.svg") 50% 50% no-repeat;
+}
