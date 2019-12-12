@@ -7,8 +7,6 @@ var closeButton = document.querySelector('.popup__close');
 var name = document.querySelector('.popup__input--name');
 var tel = document.querySelector('.popup__input--tel');
 
-console.log(name);
-
 openButton.addEventListener('click', function (evt) {
   evt.preventDefault();
   if (popup.classList.contains('visually-hidden')) {

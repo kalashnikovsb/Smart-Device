@@ -3,13 +3,13 @@
   flex-wrap: wrap;
   margin-top: 33px;
   margin-right: auto;
-  background: red;
 }
 
 .logo--footer {
   width: 216px;
+  background: green;
   margin-top: 0;
-  margin-bottom: 54px;
+  margin-bottom: 53px;
 }
 
 .logo__image-link {
@@ -59,6 +59,10 @@
   .logo {
     margin-top: 20px;
   }
+
+  .logo--footer {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -78,5 +82,31 @@
 
   .logo__wrap {
     display: none;
+  }
+
+  .logo--footer {
+    width: 100%;
+    background: green;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 82px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .logo__image-link--footer {
+    display: block;
+    width: 52px;
+    height: 52px;
+  }
+
+  .logo__image--footer {
+    display: block;
+    width: 52px;
+    height: 52px;
+  }
+
+  .logo__wrap--footer {
+    display: block;
   }
 }

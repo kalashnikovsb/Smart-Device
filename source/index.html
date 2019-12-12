@@ -120,40 +120,44 @@
       </section>
 
 
-
-
-
       <div class="footer">
         <div class="footer__top">
 
           <div class="footer__left">
+
             <div class="logo logo--footer">
-              <div class="logo__image-link">
-                <img class="logo__image" src="img/brain.svg" width="52" height="52" alt="Логотип Smart Device">
+              <div class="logo__image-link logo__image-link--footer">
+                <img class="logo__image logo__image--footer" src="img/brain.svg" width="52" height="52" alt="Логотип Smart Device">
               </div>
-              <div class="logo__wrap">
-                <a class="logo__text-link" href="index.html">Service Device</a>
-                <span class="logo__text">умные технологии</span>
+              <div class="logo__wrap logo__wrap--footer">
+                <a class="logo__text-link logo__text-link--footer" href="index.html">Service Device</a>
+                <span class="logo__text logo__text--footer">умные технологии</span>
               </div>
             </div>
 
-            <ul class="socials">
-              <li class="socials__item">
-                <a class="socials__link socials__link--fb" href="https://facebook.com">facebook.com</a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link socials__link--ok" href="https://ok.ru">ok.ru</a>
-              </li>
-              <li class="socials__item">
-                <a class="socials__link socials__link--vk" href="https://vk.com">vk.com</a>
-              </li>
-            </ul>
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item">
+                  <a class="socials__link" href="https://facebook.com">facebook.com</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="https://ok.ru">ok.ru</a>
+                </li>
+                <li class="socials__item">
+                  <a class="socials__link" href="https://vk.com">vk.com</a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="footer__center">
-            <p class="footer__title">Разделы сайта</p>
-            <div class="footer__center-inner">
-              <ul class="footer__list footer__list--left">
+            <p class="footer__list-title footer__list-title--center">Разделы сайта</p>
+
+            <label class="footer__label" type="checkbox" for="open-center">Открыть раздел</label>
+            <input class="footer__checkbox visually-hidden" type="checkbox" checked id="open-center">
+
+            <div class="footer__list-wrap">
+              <ul class="footer__list footer__list--first">
                 <li class="footer__item">
                   <a class="footer__link" href="about.html">О компании</a>
                 </li>
@@ -167,9 +171,9 @@
                   <a class="footer__link" href="installation.html">Монтаж печатных плат</a>
                 </li>
               </ul>
-              <ul class="footer__list footer__list--right">
+              <ul class="footer__list footer__list--second">
                 <li class="footer__item">
-                  <a class="footer__link" href="parts.html">Комплектующие</a>
+                  <a class="footer__link" href="parts.html">Комплеткующие</a>
                 </li>
                 <li class="footer__item">
                   <a class="footer__link" href="shipping.html">Доставка</a>
@@ -182,9 +186,13 @@
           </div>
 
           <div class="footer__right">
-            <p class="footer__title">Наш офис</p>
-            <p class="footer__text">г. Мытищи, Олимпийский проспект, д.10</p>
-            <ul class="footer__list">
+            <p class="footer__list-title footer__list-title--right">Наш офис</p>
+
+            <label class="footer__label" type="checkbox" for="open-right">Открыть раздел</label>
+            <input class="footer__checkbox visually-hidden" type="checkbox" id="open-right">
+
+            <p class="footer__list-text">г. Мытищи, Олимпийский проспект, д.10</p>
+            <ul class="footer__list footer__list--right">
               <li class="footer__item">
                 <a class="footer__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
               </li>
@@ -199,12 +207,16 @@
         </div>
 
         <div class="footer__bottom">
-          <span class="footer__text">Все права защищены</span>
-          <span class="footer__text">1999-2018 SD Service Devices</span>
-          <a class="footer__link">Условия конфиденциальности</a>
-          <a class="footer__link">Developed by WOW Studio</a>
+          <div class="footer__bottom-wrap">
+            <span class="footer__text footer__text--rights">Все права защищены</span>
+            <span class="footer__text footer__text--years">1999-2018 SD Service Devices</span>
+            <a class="footer__text footer__text--terms" href="terms.html">Условия конфиденциальности</a>
+            <a class="footer__text footer__text--developer" href="https://htmlacademy.ru">Developed by WOW Studio</a>
+          </div>
         </div>
       </div>
+
+
     </footer>
 
     <section class="popup visually-hidden">
