@@ -16,8 +16,8 @@ openButton.addEventListener('click', function (evt) {
   if (popup.classList.contains('visually-hidden')) {
     popup.classList.remove('visually-hidden');
     body.appendChild(overlay);
+    name.focus();
   }
-  name.focus();
 });
 
 closeButton.addEventListener('click', function () {
@@ -32,12 +32,4 @@ window.addEventListener('keydown', function (evt) {
     popup.classList.add('visually-hidden');
     body.removeChild(overlay);
   }
-
-  window.addEventListener('click', function () {
-    if (!popup.classList.contains('visually-hidden')) {
-      popup.classList.add('visually-hidden');
-      body.removeChild(overlay);
-    }
-  });
-
 });
