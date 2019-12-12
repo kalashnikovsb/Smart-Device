@@ -73,11 +73,11 @@
   height: 63px;
   bottom: 0;
   right: 0;
-  background: url("../../img/corner.svg") 50% 50% no-repeat #00b2ff;
+  background: url("../img/corner.svg") 50% 50% no-repeat #00b2ff;
 }
 
 .products__link--production {
-  background-image: url("../../img/production-desktop.png");
+  background-image: url("../img/production-desktop.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-color: #1b2d37;
@@ -85,12 +85,12 @@
 }
 
 .products__link--installation {
-  background: url("../../img/installation-desktop.png") 50% 50% no-repeat #1b2d37;
+  background: url("../img/installation-desktop.png") 50% 50% no-repeat #1b2d37;
   background-size: cover;
 }
 
 .products__link--parts {
-  background: url("../../img/parts-desktop.png") 50% 50% no-repeat #1b2d37;
+  background: url("../img/parts-desktop.png") 50% 50% no-repeat #1b2d37;
   background-size: cover;
 }
 
@@ -139,15 +139,15 @@
     padding-top: 50px;
     padding-bottom: 146px;
     padding-left: 46px;
-    background-image: url("../../img/parts-tablet.png");
+    background-image: url("../img/parts-tablet.png");
   }
 
   .products__link--production {
-    background-image: url("../../img/production-tablet.png");
+    background-image: url("../img/production-tablet.png");
   }
 
   .products__link--installation {
-    background-image: url("../../img/installation-tablet.png");
+    background-image: url("../img/installation-tablet.png");
   }
 }
 
@@ -179,14 +179,14 @@
   .products__link--parts {
     padding-top: 29px;
     padding-bottom: 167px;
-    background-image: url("../../img/parts-mobile.png");
+    background-image: url("../img/parts-mobile.png");
   }
 
   .products__link--production {
-    background-image: url("../../img/production-mobile.png");
+    background-image: url("../img/production-mobile.png");
   }
 
   .products__link--installation {
-    background-image: url("../../img/installation-mobile.png");
+    background-image: url("../img/installation-mobile.png");
   }
 }

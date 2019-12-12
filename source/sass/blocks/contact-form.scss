@@ -1,5 +1,5 @@
 .contact-form {
-  background: url("../../img/plane.png") 30% 60% no-repeat, url("../../img/footer-shape.svg") 30% 60% no-repeat, url("../../img/triangle5.svg") 95% 20% no-repeat, url("../../img/triangle6.svg") 98% 100% no-repeat #00b2ff;
+  background: url("../img/plane.png") 20% 60% no-repeat, url("../img/footer-shape.svg") 20% 60% no-repeat, url("../img/triangle5.svg") 95% 20% no-repeat, url("../img/triangle6.svg") 98% 100% no-repeat #00b2ff;
 }
 
 .contact-form__wrap {
@@ -132,7 +132,7 @@
 }
 
 .contact-form__agree-input:checked + .contact-form__agree-label::before {
-  background: url("../../img/tick.svg") 50% 50% no-repeat;
+  background: url("../img/tick.svg") 50% 50% no-repeat;
 }
 
 .contact-form__agree-input:hover + .contact-form__agree-label,

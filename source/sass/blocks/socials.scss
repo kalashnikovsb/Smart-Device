@@ -1,5 +1,4 @@
 .socials {
-  background: white;
   width: 113px;
 }
 
@@ -21,11 +20,28 @@
 }
 
 .socials__link {
-  background: black;
   border-radius: 50%;
   display: block;
   width: 27px;
   height: 27px;
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.socials__link--fb {
+  background: url("../img/fb.svg") 50% 50% no-repeat;
+}
+
+.socials__link--ok {
+  background: url("../img/ok.svg") 50% 50% no-repeat;
+}
+
+.socials__link--vk {
+  background: url("../img/vk.svg") 50% 50% no-repeat;
 }
 
 @media (max-width: $desktop-width) {

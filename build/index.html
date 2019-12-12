@@ -56,14 +56,15 @@
         <div class="main-header__info">
           <h1 class="main-header__title">Печатные платы</h1>
           <p class="main-header__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="button button--consultation" href="consultation.html">Получить бесплатную консультацию</a>
+          <a class="button button--consultation" href="#consultation">Получить бесплатную консультацию</a>
           <a class="button button--consultation-mobile">Бесплатная консультация</a>
         </div>
-        <button class="main-header__scroll">Скролл вниз</button>
+        <a class="main-header__scroll" href="#features">Скролл вниз</a>
       </div>
     </header>
     <main class="main-content">
       <div class="container">
+        <a class="anchor visually-hidden" name="features"></a>
         <section class="features">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="features__list">
@@ -121,6 +122,7 @@
         </div>
       </section>
     </main>
+    <a class="anchor visually-hidden" name="consultation"></a>
     <footer class="main-footer">
       <section class="contact-form">
         <div class="contact-form__wrap">
@@ -129,7 +131,7 @@
             <p class="contact-form__text">Мы проконсультируем Вас бесплатно</p>
             <div class="contact-form__top-wrap">
               <input class="contact-form__input" type="text" placeholder="Имя" name="name" required="">
-              <input class="contact-form__input" type="tel" placeholder="Телефон" name="tel" required="">
+              <input class="contact-form__input" type="tel" placeholder="Телефон" name="tel" pattern="+7[0-9]{10}" required="">
             </div>
             <textarea class="contact-form__textarea" required="">Ваш вопрос</textarea>
             <div class="content-form__bottom-wrap">
@@ -142,13 +144,9 @@
           </form>
         </div>
       </section>
-
-
       <div class="footer">
         <div class="footer__top">
-
           <div class="footer__left">
-
             <div class="logo logo--footer">
               <div class="logo__image-link logo__image-link--footer">
                 <img class="logo__image logo__image--footer" src="img/brain.svg" width="52" height="52" alt="Логотип Smart Device">
@@ -158,28 +156,24 @@
                 <span class="logo__text logo__text--footer">умные технологии</span>
               </div>
             </div>
-
             <div class="socials">
               <ul class="socials__list">
                 <li class="socials__item">
-                  <a class="socials__link" href="https://facebook.com">facebook.com</a>
+                  <a class="socials__link socials__link--fb" href="https://facebook.com">facebook.com</a>
                 </li>
                 <li class="socials__item">
-                  <a class="socials__link" href="https://ok.ru">ok.ru</a>
+                  <a class="socials__link socials__link--ok" href="https://ok.ru">ok.ru</a>
                 </li>
                 <li class="socials__item">
-                  <a class="socials__link" href="https://vk.com">vk.com</a>
+                  <a class="socials__link socials__link--vk" href="https://vk.com">vk.com</a>
                 </li>
               </ul>
             </div>
           </div>
-
           <div class="footer__center">
             <p class="footer__list-title footer__list-title--center">Разделы сайта</p>
-
-            <label class="footer__label" type="checkbox" for="open-center">Открыть раздел</label>
-            <input class="footer__checkbox visually-hidden" type="checkbox" checked="" id="open-center">
-
+            <input class="footer__checkbox visually-hidden" type="checkbox" id="open-center">
+            <label class="footer__label" for="open-center">Открыть раздел</label>
             <div class="footer__list-wrap">
               <ul class="footer__list footer__list--first">
                 <li class="footer__item">
@@ -208,13 +202,10 @@
               </ul>
             </div>
           </div>
-
           <div class="footer__right">
             <p class="footer__list-title footer__list-title--right">Наш офис</p>
-
-            <label class="footer__label" type="checkbox" for="open-right">Открыть раздел</label>
-            <input class="footer__checkbox visually-hidden" type="checkbox" id="open-right">
-
+            <input class="footer__checkbox visually-hidden" type="checkbox" id="open-right" checked="">
+            <label class="footer__label" for="open-right">Открыть раздел</label>
             <p class="footer__list-text">г. Мытищи, Олимпийский проспект, д.10</p>
             <ul class="footer__list footer__list--right">
               <li class="footer__item">
@@ -229,27 +220,27 @@
             </ul>
           </div>
         </div>
-
         <div class="footer__bottom">
           <div class="footer__bottom-wrap">
             <span class="footer__text footer__text--rights">Все права защищены</span>
             <span class="footer__text footer__text--years">1999-2018 SD Service Devices</span>
-            <a class="footer__text footer__text--terms" href="terms.html">Условия конфиденциальности</a>
-            <a class="footer__text footer__text--developer" href="https://htmlacademy.ru">Developed by WOW Studio</a>
+            <span class="footer__text footer__text--terms">
+              <a class="footer__text-link" href="terms.html">Условия конфиденциальности</a>
+            </span>
+            <span class="footer__text footer__text--developer">
+              <a class="footer__text-link" href="https://htmlacademy.ru">Developed by WOW Studio</a>
+            </span>
           </div>
         </div>
       </div>
-
-
     </footer>
-
     <section class="popup visually-hidden">
       <div class="popup__close" tabindex="0"></div>
       <h2 class="popup__title">Закажите звонок</h2>
       <p class="popup__text">Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
       <form class="popup__form" action="echo.htmlacademy.ru" method="post">
         <input class="popup__input popup__input--name" type="text" name="name" id="popup-name" placeholder="Имя" required="">
-        <input class="popup__input popup__input--tel" type="tel" name="tel" id="popup-tel" placeholder="Телефон" required="">
+        <input class="popup__input popup__input--tel" type="tel" name="tel" id="popup-tel" pattern="+7[0-9]{10}" placeholder="Телефон" required="">
         <textarea class="popup__textarea" required="">Ваш вопрос</textarea>
         <button class="button button--popup" type="submit">Отправить</button>
         <div class="popup__inner">
@@ -260,6 +251,4 @@
     </section>
     <script src="js/script.js"></script>
   </body>
-
-
 </html>

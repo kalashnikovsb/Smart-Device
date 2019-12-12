@@ -7,7 +7,6 @@
 
 .logo--footer {
   width: 216px;
-  background: green;
   margin-top: 0;
   margin-bottom: 53px;
 }
@@ -44,6 +43,10 @@
 .logo__text-link:focus {
   cursor: pointer;
   color: #00b2ff;
+}
+
+.logo__text-link--footer {
+  color: #203c42;
 }
 
 .logo__text {
@@ -86,7 +89,6 @@
 
   .logo--footer {
     width: 100%;
-    background: green;
     margin: auto;
     margin-top: 0;
     margin-bottom: 82px;
