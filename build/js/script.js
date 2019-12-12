@@ -4,7 +4,6 @@ var body = document.querySelector('body');
 var popup = document.querySelector('.popup');
 var openButton = document.querySelector('.button--callback');
 var closeButton = document.querySelector('.popup__close');
-var name = document.querySelector('.popup__input--name');
 
 var overlay = document.createElement('div');
 overlay.classList.add('overlay');
