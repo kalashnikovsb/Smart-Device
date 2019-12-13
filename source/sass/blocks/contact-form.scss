@@ -1,12 +1,16 @@
 .contact-form {
-  background: url("../img/plane.png") 20% 60% no-repeat, url("../img/footer-shape.svg") 20% 60% no-repeat, url("../img/triangle5.svg") 95% 20% no-repeat, url("../img/triangle6.svg") 98% 100% no-repeat #00b2ff;
+  margin: auto;
+  position: relative;
+  background: #00b2ff;
 }
 
 .contact-form__wrap {
-  max-width: 1200px;
+  max-width: 1920px;
   padding-right: 30px;
+  padding-left: 30px;
   margin: auto;
   display: flex;
+  background: url("../img/plane.png") 20% 60% no-repeat, url("../img/footer-shape.svg") 20% 60% no-repeat, url("../img/triangle5.svg") 95% 20% no-repeat, url("../img/triangle6.svg") 98% 100% no-repeat;
 }
 
 .contact-form__form {
