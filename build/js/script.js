@@ -19,6 +19,7 @@ openButton.addEventListener('click', function (evt) {
   if (popup.classList.contains('visually-hidden')) {
     popup.classList.remove('visually-hidden');
     body.appendChild(overlay);
+    body.classList.add('no-scroll');
   }
 
   if (localStorage.getItem('name')) {
@@ -39,13 +40,17 @@ closeButton.addEventListener('click', function () {
   if (!popup.classList.contains('visually-hidden')) {
     popup.classList.add('visually-hidden');
     body.removeChild(overlay);
+    body.classList.remove('no-scroll');
   }
 });
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     popup.classList.add('visually-hidden');
-    body.removeChild(overlay);
+    if (document.querySelector('.overlay')) {
+      body.removeChild(overlay);
+      body.classList.remove('no-scroll');
+    }
   }
 });
 
@@ -53,6 +58,7 @@ overlay.addEventListener('click', function () {
   if (!popup.classList.contains('visually-hidden')) {
     popup.classList.add('visually-hidden');
     body.removeChild(overlay);
+    body.classList.remove('no-scroll');
   }
 });
 
