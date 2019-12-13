@@ -8,6 +8,10 @@ var closeButton = document.querySelector('.popup__close');
 var nameInput = document.querySelector('.popup__input--name');
 var telInput = document.querySelector('.popup__input--tel');
 var textarea = document.querySelector('.popup__textarea');
+var consultationLink = document.querySelector('.button--consultation');
+var consultationAnchor = document.querySelector('[id=consultation]');
+var featuresLink = document.querySelector('.main-header__scroll');
+var featuresAnchor = document.querySelector('[id=features]');
 
 var overlay = document.createElement('div');
 overlay.classList.add('overlay');
@@ -72,4 +76,16 @@ form.addEventListener('submit', function (evt) {
   }
   localStorage.setItem('name', nameInput.value);
   localStorage.setItem('tel', telInput.value);
+});
+
+// Плавная прокрутка
+
+consultationLink.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  consultationAnchor.scrollIntoView({block: 'start', behavior: 'smooth'});
+});
+
+featuresLink.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  featuresAnchor.scrollIntoView({block: 'start', behavior: 'smooth'});
 });
