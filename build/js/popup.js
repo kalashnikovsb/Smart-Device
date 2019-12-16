@@ -16,13 +16,17 @@ var featuresAnchor = document.querySelector('[id=features]');
 var overlay = document.createElement('div');
 overlay.classList.add('overlay');
 
+function getBodyScrollTop () {
+  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body &&document.body.scrollTop);
+};
+
 // Открытие попапа:
 if (openButton) {
   openButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     if (popup.classList.contains('visually-hidden')) {
 
-      overlay.style.top = body.scrollTop + 'px';
+      body.style.top = getBodyScrollTop() + 'px';
       body.classList.add('no-scroll');
 
       popup.classList.remove('visually-hidden');
