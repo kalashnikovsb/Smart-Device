@@ -92,6 +92,11 @@
   resize: none;
 }
 
+.popup__textarea::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
 .popup__textarea:hover,
 .popup__textarea:focus {
   outline: 1px solid #ffffff;

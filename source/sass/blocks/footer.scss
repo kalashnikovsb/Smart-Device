@@ -1,4 +1,8 @@
-.footer__top {
+.main-footer {
+  background: #ffffff;
+}
+
+.main-footer__top {
   display: flex;
   padding-top: 65px;
   padding-bottom: 58px;
@@ -8,16 +12,16 @@
   margin: auto;
 }
 
-.footer__left {
+.main-footer__left {
   width: 216px;
   margin-right: auto;
 }
 
-.footer__label {
+.main-footer__label {
   display: none;
 }
 
-.footer__list-title {
+.main-footer__list-title {
   width: 100%;
   background: white;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -31,34 +35,34 @@
   margin-bottom: 25px;
 }
 
-.footer__list-open {
+.main-footer__list-open {
   display: none;
 }
 
-.footer__list-wrap {
+.main-footer__list-wrap {
   display: flex;
 }
 
-.footer__list {
+.main-footer__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.footer__list--first {
+.main-footer__list--first {
   margin-right: 72px;
 }
 
-.footer__list--second {
+.main-footer__list--second {
   letter-spacing: 0.03em;
 }
 
-.footer__item {
+.main-footer__item {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.footer__link {
+.main-footer__link {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 15px;
   line-height: 25px;
@@ -70,16 +74,16 @@
   text-decoration: none;
 }
 
-.footer__link:hover,
-.footer__link:focus {
+.main-footer__link:hover,
+.main-footer__link:focus {
   opacity: 1;
 }
 
-.footer__right {
+.main-footer__right {
   margin-left: 16.1%;
 }
 
-.footer__list-text {
+.main-footer__list-text {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 15px;
   line-height: 25px;
@@ -91,11 +95,11 @@
   text-decoration: none;
 }
 
-.footer__bottom {
+.main-footer__bottom {
   border-top: 1px solid #dddddd;
 }
 
-.footer__bottom-wrap {
+.main-footer__bottom-wrap {
   display: flex;
   flex-wrap: wrap;
   padding-top: 14px;
@@ -106,7 +110,7 @@
   margin: auto;
 }
 
-.footer__text {
+.main-footer__text {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 13px;
   line-height: 24px;
@@ -118,35 +122,35 @@
   text-decoration: none;
 }
 
-.footer__text--rights {
+.main-footer__text--rights {
   margin-left: 2px;
   margin-right: 5.3%;
 }
 
-.footer__text--years {
+.main-footer__text--years {
   margin-right: 10%;
 }
 
-.footer__text--developer {
+.main-footer__text--developer {
   margin-left: auto;
 }
 
-.footer__text-link {
+.main-footer__text-link {
   color: #1b2d37;
   text-decoration: none;
 }
 
-.footer__text-link:hover,
-.footer__text-link:focus {
+.main-footer__text-link:hover,
+.main-footer__text-link:focus {
   opacity: 0.5;
 }
 
 @media (max-width: $desktop-width) {
-  .footer {
+  .main-footer {
     position: relative;
   }
 
-  .footer__top {
+  .main-footer__top {
     padding-top: 19px;
     padding-bottom: 36px;
     justify-content: space-between;
@@ -155,7 +159,7 @@
     padding-right: 0;
   }
 
-  .footer__left {
+  .main-footer__left {
     width: 100%;
     display: flex;
     padding-left: 25px;
@@ -164,43 +168,43 @@
     margin-bottom: 10px;
   }
 
-  .footer__center {
+  .main-footer__center {
     padding-left: 25px;
   }
 
-  .footer__list-title {
+  .main-footer__list-title {
     padding-left: 2px;
     box-sizing: border-box;
   }
 
-  .footer__list-wrap {
+  .main-footer__list-wrap {
     display: block;
   }
 
-  .footer__list--first {
+  .main-footer__list--first {
     margin-right: 0;
   }
 
-  .footer__list--second {
+  .main-footer__list--second {
     letter-spacing: 0;
   }
 
-  .footer__right {
+  .main-footer__right {
     margin-left: auto;
     padding-right: 37px;
   }
 
-  .footer__text--rights {
+  .main-footer__text--rights {
     display: none;
   }
 
-  .footer__text--years {
+  .main-footer__text--years {
     position: absolute;
     top: 36px;
     left: 328px;
   }
 
-  .footer__bottom-wrap {
+  .main-footer__bottom-wrap {
     padding-top: 20px;
     padding-bottom: 25px;
     padding-left: 27px;
@@ -209,7 +213,7 @@
 }
 
 @media (max-width: $tablet-width) {
-  .footer__top {
+  .main-footer__top {
     display: block;
     padding-top: 46px;
     padding-bottom: 0;
@@ -217,7 +221,7 @@
     padding-right: 0;
   }
 
-  .footer__left {
+  .main-footer__left {
     width: 216px;
     display: block;
     margin: auto;
@@ -225,7 +229,7 @@
     border-bottom: none;
   }
 
-  .footer__center {
+  .main-footer__center {
     border-top: 1px solid #dddddd;
     padding-top: 28px;
     padding-bottom: 28px;
@@ -234,11 +238,11 @@
     position: relative;
   }
 
-  .footer__list-title--center {
+  .main-footer__list-title--center {
     margin-bottom: 0;
   }
 
-  .footer__label {
+  .main-footer__label {
     font-size: 0;
     position: absolute;
     display: block;
@@ -249,26 +253,26 @@
     height: 18px;
   }
 
-  .footer__label:hover,
-  .footer__label:focus {
+  .main-footer__label:hover,
+  .main-footer__label:focus {
     opacity: 0.5;
     cursor: pointer;
   }
 
-  .footer__list-wrap {
+  .main-footer__list-wrap {
     display: none;
     margin-top: 25px;
   }
 
-  .footer__checkbox:checked ~ .footer__list-wrap {
+  .main-footer__checkbox:checked ~ .main-footer__list-wrap {
     display: block;
   }
 
-  .footer__checkbox:checked + .footer__label {
+  .main-footer__checkbox:checked + .main-footer__label {
     background: url("../img/minus.svg") 50% 50% no-repeat;
   }
 
-  .footer__right {
+  .main-footer__right {
     position: relative;
     border-top: 1px solid #dddddd;
     padding-top: 27px;
@@ -277,28 +281,28 @@
     padding-right: 30px;
   }
 
-  .footer__list-title--right {
+  .main-footer__list-title--right {
     margin-bottom: 0;
   }
 
-  .footer__list-text {
+  .main-footer__list-text {
     margin-top: 33px;
     display: none;
   }
 
-  .footer__list--right {
+  .main-footer__list--right {
     display: none;
   }
 
-  .footer__checkbox:checked ~ .footer__list-text {
+  .main-footer__checkbox:checked ~ .main-footer__list-text {
     display: block;
   }
 
-  .footer__checkbox:checked ~ .footer__list--right {
+  .main-footer__checkbox:checked ~ .main-footer__list--right {
     display: block;
   }
 
-  .footer__text--years {
+  .main-footer__text--years {
     position: absolute;
     top: 125px;
     left: 50%;
@@ -307,7 +311,7 @@
     text-align: center;
   }
 
-  .footer__bottom-wrap {
+  .main-footer__bottom-wrap {
     padding-top: 28px;
     padding-left: 30px;
     padding-right: 30px;
@@ -315,12 +319,12 @@
     text-align: center;
   }
 
-  .footer__text--terms {
+  .main-footer__text--terms {
     margin-bottom: 21px;
     display: block;
   }
 
-  .footer__text--developer {
+  .main-footer__text--developer {
     display: block;
   }
 }

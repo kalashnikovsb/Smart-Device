@@ -5,12 +5,15 @@
 }
 
 .contact-form__wrap {
-  max-width: 1920px;
+  max-width: 1170px;
   padding-right: 30px;
   padding-left: 30px;
   margin: auto;
   display: flex;
-  background: url("../img/plane.png") 20% 60% no-repeat, url("../img/footer-shape.svg") 20% 60% no-repeat, url("../img/triangle5.svg") 95% 20% no-repeat, url("../img/triangle6.svg") 98% 100% no-repeat;
+  background-image: url("../img/plane.png"), url("../img/footer-shape.svg"), url("../img/triangle5.svg"), url("../img/triangle6.svg");
+  background-position: 2% 50%, 1% 50%, 95% 20%, 98% 100%;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: 400px, 500px, auto, auto, auto;
 }
 
 .contact-form__form {
@@ -94,19 +97,24 @@
   background: #19baff;
 }
 
+.contact-form__textarea::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+
 .contact-form__textarea:active,
 .contact-form__textarea:focus {
   outline: 1px solid #ffffff;
 }
 
-.content-form__bottom-wrap {
+.contact-form__bottom-wrap {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.content-form__agree-wrap {
+.contact-form__agree-wrap {
   width: 262px;
   margin-left: auto;
   margin-bottom: 40px;
@@ -192,7 +200,7 @@
     margin-bottom: 44px;
   }
 
-  .content-form__agree-wrap {
+  .contact-form__agree-wrap {
     width: 268px;
     margin-left: auto;
     margin-bottom: 40px;
@@ -241,7 +249,7 @@
     margin-bottom: 29px;
   }
 
-  .content-form__agree-wrap {
+  .contact-form__agree-wrap {
     width: 100%;
     margin-bottom: 40px;
     padding-left: 0;

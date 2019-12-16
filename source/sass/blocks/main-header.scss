@@ -1,8 +1,8 @@
 .main-header {
-  background: #1b2d37 url("../img/header-background.png");
+  background: #1b2d37 url("../img/header-background.png") 10% 0%;
 }
 
-.main-header__top {
+.main-header__wrap {
   max-width: 1414px;
   margin: auto;
   padding-left: 33px;
@@ -72,81 +72,8 @@
   color: #00b2ff;
 }
 
-.main-header__bottom {
-  max-width: 1450px;
-  padding-left: 30px;
-  margin: auto;
-  overflow: auto;
-  background: url("../img/plates-desktop.png") 100% 55% no-repeat, url("../img/header-shape-desktop.svg") 90% 55% no-repeat;
-  position: relative;
-}
-
-.main-header__scroll {
-  font-family: "PT Mono", "Courier New", monospace;
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 400;
-  color: white;
-  opacity: 0.5;
-  position: absolute;
-  bottom: 128px;
-  left: -6px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  transform: rotate(-90deg);
-  text-decoration: none;
-}
-
-.main-header__scroll:hover,
-.main-header__scroll:focus {
-  color: #00b2ff;
-}
-
-.main-header__info {
-  width: 720px;
-  margin-top: 227px;
-  margin-bottom: 275px;
-}
-
-.main-header__title {
-  margin-top: 0;
-  margin-bottom: 30px;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 80px;
-  line-height: 94px;
-  font-weight: 700;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-}
-
-.main-header__text {
-  margin-top: 0;
-  margin-bottom: 43px;
-  margin-left: 98px;
-  font-family: "PT Mono", "Courier New", monospace;
-  font-size: 22px;
-  line-height: 34px;
-  font-weight: 400;
-  color: #ffffff;
-  position: relative;
-}
-
-.main-header__text::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 66px;
-  height: 2px;
-  left: -94px;
-  top: 17px;
-  background: #ffffff;
-}
-
 @media (max-width: $desktop-width) {
-  .main-header__top {
+  .main-header__wrap {
     padding-left: 25px;
     padding-right: 21px;
   }
@@ -188,42 +115,10 @@
   .main-header__link--tel::before {
     display: none;
   }
-
-  .main-header__bottom {
-    background: url("../img/plates-tablet.png") 90% 16% no-repeat, url("../img/header-shape-tablet.svg") 90% 10% no-repeat;
-  }
-
-  .main-header__scroll {
-    display: none;
-  }
-
-  .main-header__info {
-    width: 470px;
-    margin-top: 115px;
-    margin-bottom: 163px;
-    margin-left: 58px;
-  }
-
-  .main-header__title {
-    font-size: 60px;
-    line-height: 70px;
-  }
-
-  .main-header__text {
-    margin-left: 51px;
-    font-size: 18px;
-    line-height: 28px;
-    margin-bottom: 54px;
-  }
-
-  .main-header__text::before {
-    left: -48px;
-    width: 33px;
-  }
 }
 
 @media (max-width: $tablet-width) {
-  .main-header__top {
+  .main-header__wrap {
     padding-left: 17px;
     padding-right: 13px;
   }
@@ -234,40 +129,5 @@
 
   .main-header__link--email {
     margin-right: 22px;
-  }
-
-  .main-header__bottom {
-    background: url("../img/plates-mobile.png") 40% 20% no-repeat, url("../img/header-shape-mobile.svg") 50% 20% no-repeat;
-    padding-left: 15px;
-  }
-
-  .main-header__scroll {
-    display: none;
-  }
-
-  .main-header__info {
-    width: auto;
-    margin-top: 230px;
-    margin-bottom: 70px;
-    margin-left: 0;
-    margin-right: 15px;
-  }
-
-  .main-header__title {
-    font-size: 40px;
-    line-height: 47px;
-    margin-bottom: 27px;
-  }
-
-  .main-header__text {
-    margin-left: 50px;
-    font-size: 16px;
-    line-height: 25px;
-    margin-bottom: 40px;
-  }
-
-  .main-header__text::before {
-    left: -46px;
-    top: 16px;
   }
 }

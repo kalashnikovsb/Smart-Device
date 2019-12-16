@@ -1,0 +1,167 @@
+.attraction {
+  overflow: auto;
+  background: url("../img/header-background.png") 0% 100% #1b2d37;
+  margin-bottom: 112px;
+}
+
+.attraction__wrap {
+  max-width: 1422px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: auto;
+  position: relative;
+  padding-top: 227px;
+  padding-bottom: 275px;
+  background-image: url("../img/plates-desktop.png"), url("../img/header-shape-desktop.svg");
+  background-position: 100% 60%, 100% 60%;
+  background-size: 700px, 700px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.attraction__scroll {
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: white;
+  opacity: 0.5;
+  position: absolute;
+  bottom: 128px;
+  left: -6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transform: rotate(-90deg);
+  text-decoration: none;
+}
+
+.attraction__scroll:hover,
+.attraction__scroll:focus {
+  color: #00b2ff;
+}
+
+.attraction__info {
+  width: 720px;
+}
+
+.attraction__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 80px;
+  line-height: 94px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+.attraction__text {
+  margin-top: 0;
+  margin-bottom: 43px;
+  margin-left: 98px;
+  font-family: "PT Mono", "Courier New", monospace;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+}
+
+.attraction__text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 66px;
+  height: 2px;
+  left: -94px;
+  top: 17px;
+  background: #ffffff;
+}
+
+@media (max-width: $desktop-width) {
+  .attraction {
+    margin-top: 0;
+    margin-bottom: 54px;
+  }
+
+  .attraction__wrap {
+    background: url("../img/plates-tablet.png") 100% 50% no-repeat, url("../img/header-shape-tablet.svg") 100% 50% no-repeat;
+    padding-top: 115px;
+    padding-bottom: 163px;
+    padding-left: 88px;
+    padding-right: 88px;
+  }
+
+  .attraction__scroll {
+    display: none;
+  }
+
+  .attraction__info {
+    width: 470px;
+  }
+
+  .attraction__title {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .attraction__text {
+    margin-left: 51px;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 54px;
+  }
+
+  .attraction__text::before {
+    left: -48px;
+    width: 33px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .attraction {
+    padding-left: 15px;
+    margin-bottom: 37px;
+  }
+
+  .attraction__wrap {
+    background-image: url("../img/plates-mobile.png"), url("../img/header-shape-mobile.svg");
+    background-position: 50% 20%, 50% 10%;
+    background-size: 300px, 300px;
+    background-repeat: no-repeat, no-repeat;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 230px;
+    padding-bottom: 70px;
+  }
+
+  .attraction__scroll {
+    display: none;
+  }
+
+  .attraction__info {
+    width: auto;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+
+  .attraction__title {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 27px;
+  }
+
+  .attraction__text {
+    margin-left: 50px;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+
+  .attraction__text::before {
+    left: -46px;
+    top: 16px;
+  }
+}
