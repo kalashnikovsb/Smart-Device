@@ -19,7 +19,7 @@ overlay.classList.add('overlay');
 
 function getBodyScrollTop () {
   return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body &&document.body.scrollTop);
-};
+}
 
 // Открытие попапа:
 if (openButton) {
