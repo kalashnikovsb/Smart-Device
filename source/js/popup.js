@@ -12,6 +12,7 @@ var consultationLink = document.querySelector('.button--consultation');
 var consultationAnchor = document.querySelector('[id=consultation]');
 var featuresLink = document.querySelector('.attraction__scroll');
 var featuresAnchor = document.querySelector('[id=features]');
+var bodyScroll;
 
 var overlay = document.createElement('div');
 overlay.classList.add('overlay');
@@ -26,8 +27,16 @@ if (openButton) {
     evt.preventDefault();
     if (popup.classList.contains('visually-hidden')) {
 
+
+
+      bodyScroll = getBodyScrollTop();
+      console.log(bodyScroll);
+
       body.style.top = '-' + getBodyScrollTop() + 'px';
       body.classList.add('no-scroll');
+
+
+
 
       popup.classList.remove('visually-hidden');
       body.appendChild(overlay);
@@ -52,6 +61,9 @@ if (closeButton) {
       popup.classList.add('visually-hidden');
       body.removeChild(overlay);
       body.classList.remove('no-scroll');
+
+      body.style.top = '0';
+      body.style.top = '-' + bodyScroll + 'px';
     }
   });
 }
@@ -62,6 +74,9 @@ window.addEventListener('keydown', function (evt) {
     if (document.querySelector('.overlay')) {
       body.removeChild(overlay);
       body.classList.remove('no-scroll');
+
+      body.style.top = '0';
+      body.style.top = '-' + bodyScroll + 'px';
     }
   }
 });
@@ -72,6 +87,9 @@ if (overlay) {
       popup.classList.add('visually-hidden');
       body.removeChild(overlay);
       body.classList.remove('no-scroll');
+
+      body.style.top = '0';
+      body.style.top = '-' + bodyScroll + 'px';
     }
   });
 }
