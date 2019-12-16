@@ -26,7 +26,7 @@
   opacity: 0.5;
 }
 
-.popup__title {
+.popup h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 28px;
   line-height: 39px;
@@ -36,7 +36,7 @@
   margin-bottom: 13px;
 }
 
-.popup__text {
+.popup p {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 22px;
@@ -46,7 +46,7 @@
   margin-bottom: 33px;
 }
 
-.popup__input {
+.popup input {
   background: #19baff;
   border: none;
   width: 100%;
@@ -63,17 +63,17 @@
   margin-bottom: 30px;
 }
 
-.popup__input::placeholder {
+.popup input::placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.popup__input:hover,
-.popup__input:focus {
+.popup input:hover,
+.popup input:focus {
   outline: 1px solid #ffffff;
 }
 
-.popup__textarea {
+.popup textarea {
   background: #19baff;
   border: none;
   width: 100%;
@@ -92,17 +92,17 @@
   resize: none;
 }
 
-.popup__textarea::placeholder {
+.popup textarea::placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.popup__textarea:hover,
-.popup__textarea:focus {
+.popup textarea:hover,
+.popup textarea:focus {
   outline: 1px solid #ffffff;
 }
 
-.popup__label {
+.popup__inner label {
   display: block;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 14px;
@@ -115,7 +115,7 @@
   position: relative;
 }
 
-.popup__label::before {
+.popup__inner label::before {
   content: "";
   position: absolute;
   width: 14px;
@@ -125,12 +125,12 @@
   border: 1px solid #ffffff;
 }
 
-.popup__checkbox:checked + .popup__label::before {
+.popup__inner input:checked + label::before {
   background: url("../img/tick.svg") 50% 50% no-repeat;
 }
 
-.popup__checkbox:hover + .popup__label,
-.popup__checkbox:focus + .popup__label {
+.popup__inner input:hover + label,
+.popup__inner input:focus + label {
   opacity: 1;
   cursor: pointer;
 }

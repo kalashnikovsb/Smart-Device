@@ -11,7 +11,7 @@
   margin: auto;
 }
 
-.products__title {
+.products h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
@@ -43,7 +43,7 @@
   margin-right: 0;
 }
 
-.products__link {
+.products a {
   height: 620px;
   box-sizing: border-box;
   display: block;
@@ -51,7 +51,7 @@
   padding-top: 49px;
   padding-bottom: 49px;
   padding-left: 44px;
-  padding-right: 160px;
+  padding-right: 44px;
   font-size: 20px;
   line-height: 30px;
   font-weight: 400;
@@ -60,13 +60,13 @@
   position: relative;
 }
 
-.products__link:hover,
-.products__link:focus {
+.products a:hover,
+.products a:focus {
   opacity: 0.7;
   color: #00b2ff;
 }
 
-.products__link::before {
+.products a::before {
   content: "";
   position: absolute;
   width: 63px;
@@ -76,7 +76,7 @@
   background: url("../img/corner.svg") 50% 50% no-repeat #00b2ff;
 }
 
-.products__link--production {
+.products a[href="production.html"] {
   background-image: url("../img/production-desktop.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -84,12 +84,12 @@
   background-size: cover;
 }
 
-.products__link--installation {
+.products a[href="installation.html"] {
   background: url("../img/installation-desktop.png") 50% 50% no-repeat #1b2d37;
   background-size: cover;
 }
 
-.products__link--parts {
+.products a[href="parts.html"] {
   background: url("../img/parts-desktop.png") 50% 50% no-repeat #1b2d37;
   background-size: cover;
 }
@@ -106,7 +106,7 @@
     padding: 0;
   }
 
-  .products__title {
+  .products h2 {
     font-size: 32px;
     line-height: 45px;
     color: #ffffff;
@@ -128,25 +128,24 @@
     margin-bottom: 0;
   }
 
-  .products__link {
+  .products a {
     height: 256px;
     padding-top: 39px;
     padding-bottom: 157px;
-    padding-right: 500px;
   }
 
-  .products__link--parts {
+  .products a[href="parts.html"] {
     padding-top: 50px;
     padding-bottom: 146px;
     padding-left: 46px;
     background-image: url("../img/parts-tablet.png");
   }
 
-  .products__link--production {
+  .products a[href="production.html"] {
     background-image: url("../img/production-tablet.png");
   }
 
-  .products__link--installation {
+  .products a[href="installation.html"] {
     background-image: url("../img/installation-tablet.png");
   }
 }
@@ -159,7 +158,7 @@
     padding-bottom: 48px;
   }
 
-  .products__title {
+  .products h2 {
     font-size: 28px;
     line-height: 39px;
     padding-left: 8px;
@@ -170,24 +169,24 @@
     margin-bottom: 30px;
   }
 
-  .products__link {
+  .products a {
     padding-top: 19px;
     padding-bottom: 177px;
     padding-left: 34px;
-    padding-right: 90px;
+    padding-right: 34px;
   }
 
-  .products__link--parts {
+  .products a[href="parts.html"] {
     padding-top: 29px;
     padding-bottom: 167px;
     background-image: url("../img/parts-mobile.png");
   }
 
-  .products__link--production {
+  .products a[href="production.html"] {
     background-image: url("../img/production-mobile.png");
   }
 
-  .products__link--installation {
+  .products a[href="installation.html"] {
     background-image: url("../img/installation-mobile.png");
   }
 }

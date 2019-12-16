@@ -26,7 +26,7 @@
   padding-right: 0;
 }
 
-.contact-form__title {
+.contact-form h2 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
   line-height: 51px;
@@ -37,7 +37,7 @@
   margin-left: -3px;
 }
 
-.contact-form__text {
+.contact-form p {
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 22px;
@@ -53,7 +53,7 @@
   justify-content: space-between;
 }
 
-.contact-form__input {
+.contact-form input {
   box-sizing: border-box;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
@@ -70,17 +70,17 @@
   margin-bottom: 40px;
 }
 
-.contact-form__input::placeholder {
+.contact-form input::placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.contact-form__input:active,
-.contact-form__input:focus {
+.contact-form input:active,
+.contact-form input:focus {
   outline: 1px solid #ffffff;
 }
 
-.contact-form__textarea {
+.contact-form textarea {
   box-sizing: border-box;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 16px;
@@ -97,13 +97,13 @@
   background: #19baff;
 }
 
-.contact-form__textarea::placeholder {
+.contact-form textarea::placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.contact-form__textarea:active,
-.contact-form__textarea:focus {
+.contact-form textarea:active,
+.contact-form textarea:focus {
   outline: 1px solid #ffffff;
 }
 
@@ -174,18 +174,18 @@
     padding-bottom: 63px;
   }
 
-  .contact-form__title {
+  .contact-form h2 {
     font-size: 32px;
     line-height: 45px;
     margin-bottom: 17px;
   }
 
-  .contact-form__text {
+  .contact-form p {
     margin-bottom: 55px;
     padding-left: 2px;
   }
 
-  .contact-form__input {
+  .contact-form input {
     width: 280px;
     padding-bottom: 4px;
     padding-left: 18px;
@@ -193,7 +193,7 @@
     margin-bottom: 42px;
   }
 
-  .contact-form__textarea {
+  .contact-form textarea {
     width: 100%;
     height: 160px;
     padding-left: 18px;
@@ -224,19 +224,19 @@
     padding-bottom: 0;
   }
 
-  .contact-form__title {
+  .contact-form h2 {
     font-size: 28px;
     line-height: 39px;
     padding-left: 2px;
     margin-bottom: 14px;
   }
 
-  .contact-form__text {
+  .contact-form p {
     margin-left: -2px;
     margin-bottom: 27px;
   }
 
-  .contact-form__input {
+  .contact-form input {
     width: 100%;
     padding-bottom: 4px;
     padding-left: 18px;
@@ -244,7 +244,7 @@
     margin-bottom: 32px;
   }
 
-  .contact-form__textarea {
+  .contact-form textarea {
     height: 104px;
     margin-bottom: 29px;
   }

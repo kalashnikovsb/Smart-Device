@@ -45,7 +45,7 @@
   width: 720px;
 }
 
-.attraction__title {
+.attraction h1 {
   margin-top: 0;
   margin-bottom: 30px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -57,7 +57,7 @@
   letter-spacing: 0.07em;
 }
 
-.attraction__text {
+.attraction p {
   margin-top: 0;
   margin-bottom: 43px;
   margin-left: 98px;
@@ -69,7 +69,7 @@
   position: relative;
 }
 
-.attraction__text::before {
+.attraction p::before {
   content: "";
   position: absolute;
   display: block;
@@ -102,19 +102,19 @@
     width: 470px;
   }
 
-  .attraction__title {
+  .attraction h1 {
     font-size: 60px;
     line-height: 70px;
   }
 
-  .attraction__text {
+  .attraction p {
     margin-left: 51px;
     font-size: 18px;
     line-height: 28px;
     margin-bottom: 54px;
   }
 
-  .attraction__text::before {
+  .attraction p::before {
     left: -48px;
     width: 33px;
   }
@@ -147,20 +147,20 @@
     margin-right: 15px;
   }
 
-  .attraction__title {
+  .attraction h1 {
     font-size: 40px;
     line-height: 47px;
     margin-bottom: 27px;
   }
 
-  .attraction__text {
+  .attraction p {
     margin-left: 50px;
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 40px;
   }
 
-  .attraction__text::before {
+  .attraction p::before {
     left: -46px;
     top: 16px;
   }
