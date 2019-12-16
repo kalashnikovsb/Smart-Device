@@ -26,7 +26,7 @@ if (openButton) {
     evt.preventDefault();
     if (popup.classList.contains('visually-hidden')) {
 
-      body.style.top = getBodyScrollTop() + 'px';
+      body.style.top = '-' + getBodyScrollTop() + 'px';
       body.classList.add('no-scroll');
 
       popup.classList.remove('visually-hidden');
