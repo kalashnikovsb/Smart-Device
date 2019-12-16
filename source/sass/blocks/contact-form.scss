@@ -75,7 +75,7 @@
   opacity: 1;
 }
 
-.contact-form input:active,
+.contact-form input:hover,
 .contact-form input:focus {
   outline: 1px solid #ffffff;
 }
@@ -102,7 +102,7 @@
   opacity: 1;
 }
 
-.contact-form textarea:active,
+.contact-form textarea:hover,
 .contact-form textarea:focus {
   outline: 1px solid #ffffff;
 }
@@ -120,7 +120,7 @@
   margin-bottom: 40px;
 }
 
-.contact-form__agree-label {
+.contact-form label {
   display: block;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 14px;
@@ -133,7 +133,7 @@
   padding-left: 32px;
 }
 
-.contact-form__agree-label::before {
+.contact-form label::before {
   content: "";
   position: absolute;
   top: 9px;
@@ -143,12 +143,12 @@
   border: 1px solid #ffffff;
 }
 
-.contact-form__agree-input:checked + .contact-form__agree-label::before {
+.contact-form input[name="agreement"]:checked + label::before {
   background: url("../img/tick.svg") 50% 50% no-repeat;
 }
 
-.contact-form__agree-input:hover + .contact-form__agree-label,
-.contact-form__agree-input:focus + .contact-form__agree-label {
+.contact-form input[name="agreement"]:hover + label,
+.contact-form input[name="agreement"]:focus + label {
   opacity: 1;
   cursor: pointer;
 }
@@ -207,7 +207,7 @@
     padding-top: 2px;
   }
 
-  .contact-form__agree-label::before {
+  .contact-form label::before {
     top: 8px;
     left: -2px;
   }
@@ -255,11 +255,11 @@
     padding-left: 0;
   }
 
-  .contact-form__agree-label {
+  .contact-form label {
     padding-left: 34px;
   }
 
-  .contact-form__agree-label::before {
+  .contact-form label::before {
     top: 8px;
     left: 0;
   }

@@ -129,7 +129,7 @@
 
       <section class="contact-form">
         <div class="contact-form__wrap">
-          <form class="contact-form__form" action="https://echo.htmlacademy.ru" method="post">
+          <form class="contact-form__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
             <div class="contact-form__top-wrap">
@@ -140,8 +140,8 @@
             <div class="contact-form__bottom-wrap">
               <button class="button button--agree" type="submit">Задать вопрос</button>
               <div class="contact-form__agree-wrap">
-                <input class="contact-form__agree-input visually-hidden" type="checkbox" name="agreement" value="yes" id="agreement" required="">
-                <label class="contact-form__agree-label" for="agreement">Я согласен на обработку персональных данных</label>
+                <input class="visually-hidden" type="checkbox" name="agreement" value="yes" id="agreement" required="">
+                <label for="agreement">Я согласен на обработку персональных данных</label>
               </div>
             </div>
           </form>
@@ -242,7 +242,7 @@
       <div class="popup__close" tabindex="0"></div>
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
-      <form class="popup__form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="popup__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="">
         <input type="text" name="name" id="popup-name" placeholder="Имя" required="">
         <input type="tel" name="tel" id="popup-tel" pattern="[0-9]{11}" placeholder="Телефон" required="">
         <textarea placeholder="Ваш вопрос" required=""></textarea>
