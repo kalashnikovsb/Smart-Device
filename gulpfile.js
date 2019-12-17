@@ -50,7 +50,6 @@ gulp.task("server", function () {
 gulp.task("scripts", function () {
   return gulp.src("source/js/*.js")
     .pipe(gulp.dest("build/js"))
-    // .pipe(server.stream());
 });
 
 gulp.task("refresh", function (done) {
@@ -65,9 +64,7 @@ gulp.task("images", function() {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-
     .pipe(gulp.dest("source/img"));
-
 });
 
 gulp.task("webp", function () {
