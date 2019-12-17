@@ -17,8 +17,8 @@ var bodyScroll;
 var overlay = document.createElement('div');
 overlay.classList.add('overlay');
 
-function getBodyScrollTop () {
-  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body &&document.body.scrollTop);
+function getBodyScrollTop() {
+  return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
 }
 
 // Открытие попапа:
