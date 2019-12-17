@@ -26,18 +26,9 @@ if (openButton) {
   openButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     if (popup.classList.contains('visually-hidden')) {
-
-
-
       bodyScroll = getBodyScrollTop();
-      console.log(bodyScroll);
-
       body.style.top = '-' + getBodyScrollTop() + 'px';
       body.classList.add('no-scroll');
-
-
-
-
       popup.classList.remove('visually-hidden');
       body.appendChild(overlay);
     }
