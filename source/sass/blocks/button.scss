@@ -23,6 +23,9 @@
 .button--callback {
   border: 1px solid #ffffff;
   background: transparent;
+  width: 180px;
+  padding-left: 26px;
+  padding-right: 26px;
 }
 
 .button--callback:hover,
@@ -42,6 +45,7 @@
   border: none;
   margin-bottom: 10px;
   background: #00b2ff;
+  width: 407px;
 }
 
 .button--consultation-mobile {
