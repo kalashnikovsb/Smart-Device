@@ -1,5 +1,14 @@
 .main-header {
-  background: #1b2d37 url("../img/header-background.png") 10% 0%;
+  background-color: #1b2d37;
+  background-image: url("../img/header-background@1x.png");
+  background-position: 10% 0%;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .main-header {
+    background-image: url("../img/header-background@2x.png");
+    background-size: 1920px auto;
+  }
 }
 
 .main-header__wrap {
