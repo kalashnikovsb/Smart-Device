@@ -1,15 +1,17 @@
 .popup {
-  width: 410px;
-  position: absolute;
-  top: 136px;
+  width: 490px;
+  min-height: 605px;
+  position: fixed;
+  top: 50%;
   left: 50%;
-  margin-left: -245px;
+  transform: translate(-50%, -50%);
   background: #00b2ff;
   padding-top: 28px;
   padding-bottom: 37px;
   padding-left: 40px;
   padding-right: 40px;
   z-index: 2;
+  box-sizing: border-box;
 }
 
 .popup__close {
@@ -61,6 +63,7 @@
   font-weight: 400;
   color: #ffffff;
   margin-bottom: 30px;
+  border-radius: none;
 }
 
 .popup input::placeholder {

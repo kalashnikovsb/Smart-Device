@@ -2,12 +2,12 @@
 
 var body = document.querySelector('body');
 var popup = document.querySelector('.popup');
-var form = document.querySelector('.popup__form');
+var form = popup.querySelector('.popup__form');
 var openButton = document.querySelector('.button--callback');
-var closeButton = document.querySelector('.popup__close');
-var nameInput = document.querySelector('.popup [id=popup-name]');
-var telInput = document.querySelector('.popup [id=popup-tel]');
-var textarea = document.querySelector('.popup textarea');
+var closeButton = popup.querySelector('.popup__close');
+var nameInput = popup.querySelector('.popup [id=popup-name]');
+var telInput = popup.querySelector('.popup [id=popup-tel]');
+var textarea = popup.querySelector('.popup textarea');
 var consultationLink = document.querySelector('.button--consultation');
 var consultationAnchor = document.querySelector('[id=consultation]');
 var featuresLink = document.querySelector('.attraction__scroll');
@@ -29,17 +29,13 @@ var closePopup = function () {
 var overlay = document.createElement('div');
 overlay.classList.add('overlay');
 
-// Открытие попапа:
 if (openButton) {
   openButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     if (popup.classList.contains('visually-hidden')) {
       var scrollValue = getBodyScrollTop();
-
       bodyScrollTop = scrollValue;
-      body.style.top = '-' + scrollValue + 'px';
       body.classList.add('no-scroll');
-
       popup.classList.remove('visually-hidden');
       body.appendChild(overlay);
     }
@@ -56,7 +52,6 @@ if (openButton) {
   });
 }
 
-// Закрытие попапа:
 if (closeButton) {
   closeButton.addEventListener('click', function () {
     if (!popup.classList.contains('visually-hidden')) {
@@ -82,7 +77,6 @@ if (overlay) {
   });
 }
 
-// Отправка формы:
 if (form) {
   form.addEventListener('submit', function (evt) {
     if (!nameInput.value || !telInput.value) {
@@ -94,7 +88,6 @@ if (form) {
   });
 }
 
-// Плавная прокрутка
 if (consultationLink) {
   consultationLink.addEventListener('click', function (evt) {
     evt.preventDefault();

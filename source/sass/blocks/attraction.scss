@@ -22,15 +22,15 @@
   padding-top: 227px;
   padding-bottom: 265px;
   background-image: url("../img/plates-desktop@1x.png"), url("../img/header-shape-desktop.svg");
-  background-position: 100% 60%, 100% 60%;
-  background-size: 700px, 700px;
+  background-position: 105% 62%, 95.5% 61%;
+  background-size: 702px, 610px;
   background-repeat: no-repeat, no-repeat;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .attraction__wrap {
     background-image: url("../img/plates-desktop@2x.png"), url("../img/header-shape-desktop.svg");
-    background-size: 700px, 700px;
+    background-size: 702px, 610px;
   }
 }
 
@@ -104,11 +104,11 @@
 
   .attraction__wrap {
     background-image: url("../img/plates-tablet@1x.png"), url("../img/header-shape-tablet.svg");
-    background-position: 100% 50%, 100% 50%;
+    background-position: 168% 15%, 157.8% 5%;
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
     padding-top: 115px;
-    padding-bottom: 163px;
+    padding-bottom: 153px;
     padding-left: 88px;
     padding-right: 88px;
   }
@@ -154,8 +154,8 @@
 
   .attraction__wrap {
     background-image: url("../img/plates-mobile@1x.png"), url("../img/header-shape-mobile.svg");
-    background-position: 50% 20%, 50% 10%;
-    background-size: 300px, 300px;
+    background-position: 190% 10%, -100% 6%;
+    background-size: 300px, auto;
     background-repeat: no-repeat, no-repeat;
     padding-left: 0;
     padding-right: 0;

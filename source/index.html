@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Производство, монтаж, комплектующие для печатных плат">
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -18,7 +19,7 @@
             <img src="img/brain.svg" width="52" height="52" alt="Логотип Smart Device">
           </div>
           <div class="logo__wrap">
-            <a class="logo__text-link">Smart Device</a>
+            <a class="logo__text-link" aria-label="Ссылка на главную страницу">Smart Device</a>
             <span class="logo__text">умные технологии</span>
           </div>
         </div>
@@ -42,7 +43,7 @@
         </div>
       </section>
       <div class="container">
-        <a class="anchor visually-hidden" id="features" href="#"></a>
+        <a class="anchor visually-hidden" id="features" href="#">Ссылка прокрутки</a>
         <section class="features">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="features__list">
@@ -99,19 +100,19 @@
           </ul>
         </div>
       </section>
-      <a class="anchor visually-hidden" id="consultation" href="#"></a>
+      <a class="anchor visually-hidden" id="consultation" href="#">Ссылка прокрутки</a>
       <section class="contact-form">
         <div class="contact-form__wrap">
           <form class="contact-form__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="on">
             <h2>Остались вопросы? Задайте их нам!</h2>
             <p>Мы проконсультируем Вас бесплатно</p>
             <div class="contact-form__top-wrap">
-              <input type="text" placeholder="Имя" name="name" required>
-              <input type="tel" placeholder="Телефон" name="tel" pattern="[0-9]{11}" required>
+              <input type="text" placeholder="Имя" name="name" required aria-label="Поле ввода имени">
+              <input type="tel" placeholder="Телефон" name="tel" pattern="[0-9]{11}" required aria-label="Поле ввода телефона">
             </div>
-            <textarea placeholder="Ваш вопрос" required></textarea>
+            <textarea placeholder="Ваш вопрос" required aria-label="Поле ввода текста"></textarea>
             <div class="contact-form__bottom-wrap">
-              <button class="button button--agree" type="submit">Задать вопрос</button>
+              <button class="button button--agree" type="submit" aria-label="Кнопка отправки данных">Задать вопрос</button>
               <div class="contact-form__agree-wrap">
                 <input class="visually-hidden" type="checkbox" name="agreement" value="yes" id="agreement" required>
                 <label for="agreement">Я согласен на обработку персональных данных</label>
@@ -129,7 +130,7 @@
               <img src="img/brain.svg" width="52" height="52" alt="Логотип Smart Device">
             </div>
             <div class="logo__wrap logo__wrap--footer">
-              <a class="logo__text-link logo__text-link--footer">Service Device</a>
+              <a class="logo__text-link logo__text-link--footer" aria-label="Ссылка на главную страницу">Service Device</a>
               <span class="logo__text logo__text--footer">умные технологии</span>
             </div>
           </div>
@@ -149,7 +150,7 @@
         </div>
         <div class="main-footer__center">
           <p class="main-footer__list-title main-footer__list-title--center">Разделы сайта</p>
-          <input class="main-footer__checkbox visually-hidden" type="checkbox" id="open-center">
+          <input class="main-footer__checkbox visually-hidden" type="checkbox" id="open-center" aria-label="Открыть пункт">
           <label class="main-footer__label" for="open-center">Открыть раздел</label>
           <div class="main-footer__list-wrap">
             <ul class="main-footer__list main-footer__list--first">
@@ -181,7 +182,7 @@
         </div>
         <div class="main-footer__right">
           <p class="main-footer__list-title main-footer__list-title--right">Наш офис</p>
-          <input class="main-footer__checkbox visually-hidden" type="checkbox" id="open-right" checked>
+          <input class="main-footer__checkbox visually-hidden" type="checkbox" id="open-right" checked aria-label="Открыть пункт">
           <label class="main-footer__label" for="open-right">Открыть раздел</label>
           <p class="main-footer__list-text">г. Мытищи, Олимпийский проспект, д.10</p>
           <ul class="main-footer__list main-footer__list--right">
@@ -215,12 +216,12 @@
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
       <form class="popup__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="on">
-        <input type="text" name="name" id="popup-name" placeholder="Имя" required>
-        <input type="tel" name="tel" id="popup-tel" pattern="[0-9]{11}" placeholder="Телефон" required>
-        <textarea placeholder="Ваш вопрос" required></textarea>
-        <button class="button button--popup" type="submit">Отправить</button>
+        <input type="text" name="name" id="popup-name" placeholder="Имя" required aria-label="Поле ввода имени">
+        <input type="tel" name="tel" id="popup-tel" pattern="[0-9]{11}" placeholder="Телефон" required aria-label="Поле ввода телефона">
+        <textarea placeholder="Ваш вопрос" required aria-label="Поле ввода текста"></textarea>
+        <button class="button button--popup" type="submit" aria-label="Кнопка отправки данных">Отправить</button>
         <div class="popup__inner">
-          <input class="visually-hidden" type="checkbox" name="agreement" value="yes" id="popup-agreement" required>
+          <input class="visually-hidden" type="checkbox" name="agreement" value="yes" id="popup-agreement" required aria-label="Согласие на обработку данных">
           <label for="popup-agreement" tabindex="0">Я согласен на обработку персональных данных</label>
         </div>
       </form>

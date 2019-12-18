@@ -11,15 +11,15 @@
   margin: auto;
   display: flex;
   background-image: url("../img/plane@1x.png"), url("../img/footer-shape.svg"), url("../img/triangle5.svg"), url("../img/triangle6.svg");
-  background-position: 2% 50%, 1% 50%, 95% 20%, 98% 100%;
+  background-position: 1% 42%, -24% 51%, 95% 20%, 98% 100%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 400px, 500px, auto, auto, auto;
+  background-size: 510px, 615px, auto, auto, auto;
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contact-form__wrap {
     background-image: url("../img/plane@2x.png"), url("../img/footer-shape.svg"), url("../img/triangle5.svg"), url("../img/triangle6.svg");
-    background-size: 400px auto, 500px, auto, auto;
+    background-size: 510px auto, 615px, auto, auto;
   }
 }
 
@@ -75,6 +75,7 @@
   border: none;
   background: #19baff;
   margin-bottom: 40px;
+  border-radius: none;
 }
 
 .contact-form input::placeholder {
@@ -198,6 +199,7 @@
     padding-left: 18px;
     padding-right: 17px;
     margin-bottom: 42px;
+    border-radius: none;
   }
 
   .contact-form textarea {
@@ -249,6 +251,7 @@
     padding-left: 18px;
     padding-right: 17px;
     margin-bottom: 32px;
+    border-radius: none;
   }
 
   .contact-form textarea {
@@ -264,6 +267,7 @@
 
   .contact-form__agree-wrap input {
     width: 0;
+    border-radius: none;
   }
 
   .contact-form label {
