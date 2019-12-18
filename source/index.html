@@ -108,7 +108,7 @@
             <p>Мы проконсультируем Вас бесплатно</p>
             <div class="contact-form__top-wrap">
               <input type="text" placeholder="Имя" name="name" required aria-label="Поле ввода имени">
-              <input type="tel" placeholder="Телефон" name="tel" pattern="[0-9]{11}" required aria-label="Поле ввода телефона">
+              <input type="tel" placeholder="Телефон" name="tel" id="contact-tel" required aria-label="Поле ввода телефона">
             </div>
             <textarea placeholder="Ваш вопрос" required aria-label="Поле ввода текста"></textarea>
             <div class="contact-form__bottom-wrap">
@@ -150,9 +150,10 @@
         </div>
         <div class="main-footer__center">
           <p class="main-footer__list-title main-footer__list-title--center">Разделы сайта</p>
-          <input class="main-footer__checkbox visually-hidden" type="checkbox" id="open-top" aria-label="Открыть пункт">
-          <label class="main-footer__label" for="open-top">Открыть раздел</label>
-          <div class="main-footer__list-wrap visually-hidden">
+
+          <div class="main-footer__open-menu main-footer__open-menu--opened" id="open-top">Открыть раздел</div>
+
+          <div class="main-footer__list-wrap">
             <ul class="main-footer__list main-footer__list--first">
               <li class="main-footer__item">
                 <a class="main-footer__link" href="about.html">О компании</a>
@@ -182,10 +183,11 @@
         </div>
         <div class="main-footer__right">
           <p class="main-footer__list-title main-footer__list-title--right">Наш офис</p>
-          <input class="main-footer__checkbox visually-hidden" type="checkbox" id="open-bottom" aria-label="Открыть пункт">
-          <label class="main-footer__label" for="open-bottom">Открыть раздел</label>
-          <p class="main-footer__list-text visually-hidden">г. Мытищи, Олимпийский проспект, д.10</p>
-          <ul class="main-footer__list main-footer__list--right visually-hidden">
+
+          <div class="main-footer__open-menu main-footer__open-menu--opened" id="open-bottom">Открыть раздел</div>
+
+          <p class="main-footer__list-text">г. Мытищи, Олимпийский проспект, д.10</p>
+          <ul class="main-footer__list main-footer__list--right">
             <li class="main-footer__item">
               <a class="main-footer__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
             </li>
@@ -217,7 +219,7 @@
       <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
       <form class="popup__form" action="https://echo.htmlacademy.ru" method="post" autocomplete="on">
         <input type="text" name="name" id="popup-name" placeholder="Имя" required aria-label="Поле ввода имени">
-        <input type="tel" name="tel" id="popup-tel" pattern="[0-9]{11}" placeholder="Телефон" required aria-label="Поле ввода телефона">
+        <input type="tel" name="tel" id="popup-tel" placeholder="Телефон" required aria-label="Поле ввода телефона">
         <textarea placeholder="Ваш вопрос" required aria-label="Поле ввода текста"></textarea>
         <button class="button button--popup" type="submit" aria-label="Кнопка отправки данных">Отправить</button>
         <div class="popup__inner">
@@ -226,6 +228,7 @@
         </div>
       </form>
     </section>
+    <script src="js/vendor.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

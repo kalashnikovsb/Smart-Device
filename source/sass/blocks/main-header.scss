@@ -1,13 +1,29 @@
 .main-header {
   background-color: #1b2d37;
-  background-image: url("../img/header-background@1x.png");
+  // background-image: url("../img/header-background@1x.png");
   background-position: 10% 0%;
+}
+
+.webp .main-header {
+  background-image: url("../img/header-background@1x.webp");
+}
+
+.no-webp .main-header {
+  background-image: url("../img/header-background@1x.png");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .main-header {
-    background-image: url("../img/header-background@2x.png");
+    // background-image: url("../img/header-background@2x.png");
     background-size: 1920px auto;
+  }
+
+  .webp .main-header {
+    background-image: url("../img/header-background@2x.webp");
+  }
+
+  .no-webp .main-header {
+    background-image: url("../img/header-background@2x.png");
   }
 }
 

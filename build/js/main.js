@@ -6,32 +6,40 @@ var form = popup.querySelector('.popup__form');
 var openButton = document.querySelector('.button--callback');
 var closeButton = popup.querySelector('.popup__close');
 var nameInput = popup.querySelector('.popup [id=popup-name]');
-var telInput = popup.querySelector('.popup [id=popup-tel]');
+var popupTel = popup.querySelector('.popup [id=popup-tel]');
+var contactTel = document.querySelector('[id=contact-tel]');
 var textarea = popup.querySelector('.popup textarea');
 var consultationLink = document.querySelector('.button--consultation');
 var consultationAnchor = document.querySelector('[id=consultation]');
 var featuresLink = document.querySelector('.attraction__scroll');
 var featuresAnchor = document.querySelector('[id=features]');
-var bodyScrollTop = 0;
-
 var openTop = document.querySelector('#open-top');
 var openBottom = document.querySelector('#open-bottom');
 var listTop = document.querySelector('.main-footer__list-wrap');
 var listBottom = document.querySelector('.main-footer__list--right');
 var textBottom = document.querySelector('.main-footer__list-text');
+var bodyScrollTop = 0;
 
+var telOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+var popupMask = IMask(popupTel, telOptions);
+var contactMask = IMask(contactTel, telOptions);
+
+//Аккордеон
 if (openTop) {
   openTop.addEventListener('click', function () {
     if (listTop.classList.contains('visually-hidden')) {
       listTop.classList.remove('visually-hidden');
-
+      openTop.classList.toggle('main-footer__open-menu--opened');
       if (!listBottom.classList.contains('visually-hidden')) {
         listBottom.classList.add('visually-hidden');
         textBottom.classList.add('visually-hidden');
+        openBottom.classList.toggle('main-footer__open-menu--opened');
       }
-
     } else {
       listTop.classList.add('visually-hidden');
+      openTop.classList.toggle('main-footer__open-menu--opened');
     }
   });
 }
@@ -41,14 +49,15 @@ if (openBottom) {
     if (listBottom.classList.contains('visually-hidden')) {
       listBottom.classList.remove('visually-hidden');
       textBottom.classList.remove('visually-hidden');
-
+      openBottom.classList.toggle('main-footer__open-menu--opened');
       if (!listTop.classList.contains('visually-hidden')) {
         listTop.classList.add('visually-hidden');
+        openTop.classList.toggle('main-footer__open-menu--opened');
       }
-
     } else {
       listBottom.classList.add('visually-hidden');
       textBottom.classList.add('visually-hidden');
+      openBottom.classList.toggle('main-footer__open-menu--opened');
     }
   });
 }
@@ -80,11 +89,11 @@ if (openButton) {
     }
     if (localStorage.getItem('name')) {
       nameInput.value = localStorage.getItem('name');
-      telInput.focus();
+      nameInput.focus();
     }
     if (localStorage.getItem('tel')) {
-      telInput.value = localStorage.getItem('tel');
-      textarea.focus();
+      popupTel.value = localStorage.getItem('tel');
+      nameInput.focus();
     } else {
       nameInput.focus();
     }
@@ -118,12 +127,12 @@ if (overlay) {
 
 if (form) {
   form.addEventListener('submit', function (evt) {
-    if (!nameInput.value || !telInput.value) {
+    if (!nameInput.value || !popupTel.value) {
       evt.preventDefault();
       closePopup();
     }
     localStorage.setItem('name', nameInput.value);
-    localStorage.setItem('tel', telInput.value);
+    localStorage.setItem('tel', popupTel.value);
   });
 }
 

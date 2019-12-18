@@ -7,15 +7,29 @@
   padding-left: 210px;
   padding-right: 50px;
   background-color: #ffffff;
-  background-image: url("../img/number-desktop@1x.png");
-  background-position: 3% 48%;
+  background-position: 3% 46%;
   background-repeat: no-repeat;
+}
+
+.no-webp .about {
+  background-image: url("../img/number-desktop@1x.png");
+}
+
+.webp .about {
+  background-image: url("../img/number-desktop@1x.webp");
 }
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .about {
-    background-image: url("../img/number-desktop@2x.png");
     background-size: 117px auto;
+  }
+
+  .no-webp .about {
+    background-image: url("../img/number-desktop@2x.png");
+  }
+
+  .webp .about {
+    background-image: url("../img/number-desktop@2x.webp");
   }
 }
 
@@ -53,15 +67,31 @@
     padding-bottom: 83px;
     padding-left: 213px;
     padding-right: 25px;
-    background-image: url("../img/number-tablet@1x.png");
     background-position: 4% 29%;
+    background-repeat: no-repeat;
+  }
+
+  .webp .about {
+    background-image: url("../img/number-tablet@1x.webp");
+    background-repeat: no-repeat;
+  }
+
+  .no-webp .about {
+    background-image: url("../img/number-tablet@1x.png");
     background-repeat: no-repeat;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .about {
-      background-image: url("../img/number-tablet@2x.png");
       background-size: 134px auto;
+    }
+
+    .webp .about {
+      background-image: url("../img/number-tablet@2x.webp");
+    }
+
+    .no-webp .about {
+      background-image: url("../img/number-tablet@2x.png");
     }
   }
 
@@ -95,6 +125,14 @@
     padding-bottom: 65px;
     padding-left: 17px;
     padding-right: 10px;
+    background: none;
+  }
+
+  .webp .about {
+    background: none;
+  }
+
+  .no-webp .about {
     background: none;
   }
 

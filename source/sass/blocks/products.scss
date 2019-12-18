@@ -77,42 +77,75 @@
 }
 
 .products a[href="production.html"] {
-  background-image: url("../img/production-desktop@1x.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-color: #1b2d37;
   background-size: cover;
 }
 
+.webp .products a[href="production.html"] {
+  background-image: url("../img/production-desktop@1x.webp");
+}
+
+.no-webp .products a[href="production.html"] {
+  background-image: url("../img/production-desktop@1x.png");
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .products a[href="production.html"] {
+  .webp .products a[href="production.html"] {
+    background-image: url("../img/production-desktop@2x.webp");
+  }
+
+  .no-webp .products a[href="production.html"] {
     background-image: url("../img/production-desktop@2x.png");
   }
 }
 
 .products a[href="installation.html"] {
-  background-image: url("../img/installation-desktop@1x.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.webp .products a[href="installation.html"] {
+  background-image: url("../img/installation-desktop@1x.webp");
+}
+
+.no-webp .products a[href="installation.html"] {
+  background-image: url("../img/installation-desktop@1x.png");
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .products a[href="installation.html"] {
+  .webp .products a[href="installation.html"] {
+    background-image: url("../img/installation-desktop@2x.webp");
+  }
+
+  .no-webp .products a[href="installation.html"] {
     background-image: url("../img/installation-desktop@2x.png");
   }
 }
 
 .products a[href="parts.html"] {
-  background-image: url("../img/parts-desktop@1x.png");
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-color: #1b2d37;
   background-size: cover;
 }
 
+.webp .products a[href="parts.html"] {
+  background-image: url("../img/parts-desktop@1x.webp");
+}
+
+.no-webp .products a[href="parts.html"] {
+  background-image: url("../img/parts-desktop@1x.png");
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-  .products a[href="parts.html"] {
+  .webp .products a[href="parts.html"] {
+    background-image: url("../img/parts-desktop@2x.webp");
+  }
+
+  .no-webp .products a[href="parts.html"] {
     background-image: url("../img/parts-desktop@2x.png");
   }
 }
@@ -161,31 +194,58 @@
     padding-top: 50px;
     padding-bottom: 146px;
     padding-left: 46px;
+  }
+
+  .webp .products a[href="parts.html"] {
+    background-image: url("../img/parts-tablet@1x.webp");
+  }
+
+  .no-webp .products a[href="parts.html"] {
     background-image: url("../img/parts-tablet@1x.png");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .products a[href="parts.html"] {
+    .webp .products a[href="parts.html"] {
+      background-image: url("../img/parts-tablet@2x.webp");
+    }
+
+    .no-webp .products a[href="parts.html"] {
       background-image: url("../img/parts-tablet@2x.png");
     }
   }
 
-  .products a[href="production.html"] {
+  .webp .products a[href="production.html"] {
+    background-image: url("../img/production-tablet@1x.webp");
+  }
+
+  .no-webp .products a[href="production.html"] {
     background-image: url("../img/production-tablet@1x.png");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .products a[href="production.html"] {
+    .webp .products a[href="production.html"] {
+      background-image: url("../img/production-tablet@2x.webp");
+    }
+
+    .no-webp .products a[href="production.html"] {
       background-image: url("../img/production-tablet@2x.png");
     }
   }
 
-  .products a[href="installation.html"] {
+  .webp .products a[href="installation.html"] {
+    background-image: url("../img/installation-tablet@1x.webp");
+  }
+
+  .no-webp .products a[href="installation.html"] {
     background-image: url("../img/installation-tablet@1x.png");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .products a[href="installation.html"] {
+    .webp .products a[href="installation.html"] {
+      background-image: url("../img/installation-tablet@2x.webp");
+    }
+
+    .no-webp .products a[href="installation.html"] {
       background-image: url("../img/installation-tablet@2x.png");
     }
   }
@@ -220,31 +280,58 @@
   .products a[href="parts.html"] {
     padding-top: 29px;
     padding-bottom: 167px;
+  }
+
+  .webp .products a[href="parts.html"] {
+    background-image: url("../img/parts-mobile@1x.webp");
+  }
+
+  .no-webp .products a[href="parts.html"] {
     background-image: url("../img/parts-mobile@1x.png");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .products a[href="parts.html"] {
+    .webp .products a[href="parts.html"] {
+      background-image: url("../img/parts-mobile@2x.webp");
+    }
+
+    .no-webp .products a[href="parts.html"] {
       background-image: url("../img/parts-mobile@2x.png");
     }
   }
 
-  .products a[href="production.html"] {
+  .webp .products a[href="production.html"] {
+    background-image: url("../img/production-mobile@1x.webp");
+  }
+
+  .no-webp .products a[href="production.html"] {
     background-image: url("../img/production-mobile@1x.png");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .products a[href="production.html"] {
+    .webp .products a[href="production.html"] {
+      background-image: url("../img/production-mobile@2x.webp");
+    }
+
+    .no-webp .products a[href="production.html"] {
       background-image: url("../img/production-mobile@2x.png");
     }
   }
 
-  .products a[href="installation.html"] {
+  .webp .products a[href="installation.html"] {
+    background-image: url("../img/installation-mobile@1x.webp");
+  }
+
+  .no-webp .products a[href="installation.html"] {
     background-image: url("../img/installation-mobile@1x.png");
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .products a[href="installation.html"] {
+    .webp .products a[href="installation.html"] {
+      background-image: url("../img/installation-mobile@2x.webp");
+    }
+
+    .no-webp .products a[href="installation.html"] {
       background-image: url("../img/installation-mobile@2x.png");
     }
   }

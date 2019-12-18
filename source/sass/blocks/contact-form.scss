@@ -10,16 +10,30 @@
   padding-left: 30px;
   margin: auto;
   display: flex;
-  background-image: url("../img/plane@1x.png"), url("../img/footer-shape.svg"), url("../img/triangle5.svg"), url("../img/triangle6.svg");
   background-position: 1% 42%, -24% 51%, 95% 20%, 98% 100%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   background-size: 510px, 615px, auto, auto, auto;
 }
 
+.webp .contact-form__wrap {
+  background-image: url("../img/plane@1x.webp"), url("../img/footer-shape.svg"), url("../img/triangle5.svg"), url("../img/triangle6.svg");
+}
+
+.no-webp .contact-form__wrap {
+  background-image: url("../img/plane@1x.png"), url("../img/footer-shape.svg"), url("../img/triangle5.svg"), url("../img/triangle6.svg");
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contact-form__wrap {
-    background-image: url("../img/plane@2x.png"), url("../img/footer-shape.svg"), url("../img/triangle5.svg"), url("../img/triangle6.svg");
     background-size: 510px auto, 615px, auto, auto;
+  }
+
+  .webp .contact-form__wrap {
+    background-image: url("../img/plane@2x.webp"), url("../img/footer-shape.svg"), url("../img/triangle5.svg"), url("../img/triangle6.svg");
+  }
+
+  .no-webp .contact-form__wrap {
+    background-image: url("../img/plane@2x.png"), url("../img/footer-shape.svg"), url("../img/triangle5.svg"), url("../img/triangle6.svg");
   }
 }
 
@@ -171,6 +185,14 @@
     max-width: none;
     padding-left: 91px;
     padding-right: 86px;
+    background: none;
+  }
+
+  .webp .contact-form__wrap {
+    background: none;
+  }
+
+  .no-webp .contact-form__wrap {
     background: none;
   }
 

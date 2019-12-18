@@ -1,15 +1,29 @@
 .attraction {
   overflow: auto;
   background-color: #1b2d37;
-  background-image: url("../img/header-background@1x.png");
   background-position: 0% 100%;
   margin-bottom: 112px;
 }
 
+.webp .attraction {
+  background-image: url("../img/header-background@1x.webp");
+}
+
+.no-webp .attraction {
+  background-image: url("../img/header-background@1x.png");
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .attraction {
-    background-image: url("../img/header-background@2x.png");
     background-size: 1920px auto;
+  }
+
+  .webp .attraction {
+    background-image: url("../img/header-background@2x.webp");
+  }
+
+  .no-webp .attraction {
+    background-image: url("../img/header-background@2x.png");
   }
 }
 
@@ -21,16 +35,32 @@
   position: relative;
   padding-top: 227px;
   padding-bottom: 265px;
-  background-image: url("../img/plates-desktop@1x.png"), url("../img/header-shape-desktop.svg");
+  // background-image: url("../img/plates-desktop@1x.png"), url("../img/header-shape-desktop.svg");
   background-position: 105% 62%, 95.5% 61%;
   background-size: 702px, 610px;
   background-repeat: no-repeat, no-repeat;
 }
 
+.webp .attraction__wrap {
+  background-image: url("../img/plates-desktop@1x.webp"), url("../img/header-shape-desktop.svg");
+}
+
+.no-webp .attraction__wrap {
+  background-image: url("../img/plates-desktop@1x.png"), url("../img/header-shape-desktop.svg");
+}
+
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .attraction__wrap {
-    background-image: url("../img/plates-desktop@2x.png"), url("../img/header-shape-desktop.svg");
+    // background-image: url("../img/plates-desktop@2x.png"), url("../img/header-shape-desktop.svg");
     background-size: 702px, 610px;
+  }
+
+  .webp .attraction__wrap {
+    background-image: url("../img/plates-desktop@2x.webp"), url("../img/header-shape-desktop.svg");
+  }
+
+  .no-webp .attraction__wrap {
+    background-image: url("../img/plates-desktop@2x.png"), url("../img/header-shape-desktop.svg");
   }
 }
 
@@ -103,7 +133,7 @@
   }
 
   .attraction__wrap {
-    background-image: url("../img/plates-tablet@1x.png"), url("../img/header-shape-tablet.svg");
+    // background-image: url("../img/plates-tablet@1x.png"), url("../img/header-shape-tablet.svg");
     background-position: 168% 15%, 157.8% 5%;
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
@@ -113,10 +143,26 @@
     padding-right: 88px;
   }
 
+  .webp .attraction__wrap {
+    background-image: url("../img/plates-tablet@1x.webp"), url("../img/header-shape-tablet.svg");
+  }
+
+  .no-webp .attraction__wrap {
+    background-image: url("../img/plates-tablet@1x.png"), url("../img/header-shape-tablet.svg");
+  }
+
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .attraction__wrap {
-      background-image: url("../img/plates-tablet@2x.png"), url("../img/header-shape-tablet.svg");
+      // background-image: url("../img/plates-tablet@2x.png"), url("../img/header-shape-tablet.svg");
       background-size: 465px auto, auto;
+    }
+
+    .webp .attraction__wrap {
+      background-image: url("../img/plates-tablet@2x.webp"), url("../img/header-shape-tablet.svg");
+    }
+
+    .no-webp .attraction__wrap {
+      background-image: url("../img/plates-tablet@2x.png"), url("../img/header-shape-tablet.svg");
     }
   }
 
@@ -153,7 +199,7 @@
   }
 
   .attraction__wrap {
-    background-image: url("../img/plates-mobile@1x.png"), url("../img/header-shape-mobile.svg");
+    // background-image: url("../img/plates-mobile@1x.png"), url("../img/header-shape-mobile.svg");
     background-position: 190% 10%, -100% 6%;
     background-size: 300px, auto;
     background-repeat: no-repeat, no-repeat;
@@ -163,10 +209,26 @@
     padding-bottom: 70px;
   }
 
+  .webp .attraction__wrap {
+    background-image: url("../img/plates-mobile@1x.webp"), url("../img/header-shape-mobile.svg");
+  }
+
+  .no-webp .attraction__wrap {
+    background-image: url("../img/plates-mobile@1x.png"), url("../img/header-shape-mobile.svg");
+  }
+
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .attraction__wrap {
-      background-image: url("../img/plates-mobile@2x.png"), url("../img/header-shape-mobile.svg");
+      // background-image: url("../img/plates-mobile@2x.png"), url("../img/header-shape-mobile.svg");
       background-size: 300px, 300px;
+    }
+
+    .webp .attraction__wrap {
+      background-image: url("../img/plates-mobile@2x.webp"), url("../img/header-shape-mobile.svg");
+    }
+
+    .no-webp .attraction__wrap {
+      background-image: url("../img/plates-mobile@2x.png"), url("../img/header-shape-mobile.svg");
     }
   }
 
