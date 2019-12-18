@@ -14,6 +14,45 @@ var featuresLink = document.querySelector('.attraction__scroll');
 var featuresAnchor = document.querySelector('[id=features]');
 var bodyScrollTop = 0;
 
+var openTop = document.querySelector('#open-top');
+var openBottom = document.querySelector('#open-bottom');
+var listTop = document.querySelector('.main-footer__list-wrap');
+var listBottom = document.querySelector('.main-footer__list--right');
+var textBottom = document.querySelector('.main-footer__list-text');
+
+if (openTop) {
+  openTop.addEventListener('click', function () {
+    if (listTop.classList.contains('visually-hidden')) {
+      listTop.classList.remove('visually-hidden');
+
+      if (!listBottom.classList.contains('visually-hidden')) {
+        listBottom.classList.add('visually-hidden');
+        textBottom.classList.add('visually-hidden');
+      }
+
+    } else {
+      listTop.classList.add('visually-hidden');
+    }
+  });
+}
+
+if (openBottom) {
+  openBottom.addEventListener('click', function () {
+    if (listBottom.classList.contains('visually-hidden')) {
+      listBottom.classList.remove('visually-hidden');
+      textBottom.classList.remove('visually-hidden');
+
+      if (!listTop.classList.contains('visually-hidden')) {
+        listTop.classList.add('visually-hidden');
+      }
+
+    } else {
+      listBottom.classList.add('visually-hidden');
+      textBottom.classList.add('visually-hidden');
+    }
+  });
+}
+
 function getBodyScrollTop() {
   return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
 }
