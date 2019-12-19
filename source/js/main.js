@@ -2,13 +2,12 @@
 
 var body = document.querySelector('body');
 var popup = document.querySelector('.popup');
-var form = popup.querySelector('.popup__form');
+var form = document.querySelector('.popup__form');
 var openButton = document.querySelector('.button--callback');
-var closeButton = popup.querySelector('.popup__close');
-var nameInput = popup.querySelector('.popup [id=popup-name]');
-var popupTel = popup.querySelector('.popup [id=popup-tel]');
+var closeButton = document.querySelector('.popup__close');
+var nameInput = document.querySelector('.popup [id=popup-name]');
+var popupTel = document.querySelector('.popup [id=popup-tel]');
 var contactTel = document.querySelector('[id=contact-tel]');
-var textarea = popup.querySelector('.popup textarea');
 var consultationLink = document.querySelector('.button--consultation');
 var consultationAnchor = document.querySelector('[id=consultation]');
 var featuresLink = document.querySelector('.attraction__scroll');
@@ -23,8 +22,14 @@ var bodyScrollTop = 0;
 var telOptions = {
   mask: '+{7}(000)000-00-00'
 };
-var popupMask = IMask(popupTel, telOptions);
-var contactMask = IMask(contactTel, telOptions);
+
+if (popupTel) {
+  var popupMask = IMask(popupTel, telOptions);
+}
+
+if (contactTel) {
+  var contactMask = IMask(contactTel, telOptions);
+}
 
 //Аккордеон
 if (openTop) {
