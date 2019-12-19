@@ -19,54 +19,6 @@ var listBottom = document.querySelector('.main-footer__list--right');
 var textBottom = document.querySelector('.main-footer__list-text');
 var bodyScrollTop = 0;
 
-var telOptions = {
-  mask: '+{7}(000)000-00-00'
-};
-
-if (popupTel) {
-  var popupMask = IMask(popupTel, telOptions);
-}
-
-if (contactTel) {
-  var contactMask = IMask(contactTel, telOptions);
-}
-
-//Аккордеон
-if (openTop) {
-  openTop.addEventListener('click', function () {
-    if (listTop.classList.contains('visually-hidden')) {
-      listTop.classList.remove('visually-hidden');
-      openTop.classList.toggle('main-footer__open-menu--opened');
-      if (!listBottom.classList.contains('visually-hidden')) {
-        listBottom.classList.add('visually-hidden');
-        textBottom.classList.add('visually-hidden');
-        openBottom.classList.toggle('main-footer__open-menu--opened');
-      }
-    } else {
-      listTop.classList.add('visually-hidden');
-      openTop.classList.toggle('main-footer__open-menu--opened');
-    }
-  });
-}
-
-if (openBottom) {
-  openBottom.addEventListener('click', function () {
-    if (listBottom.classList.contains('visually-hidden')) {
-      listBottom.classList.remove('visually-hidden');
-      textBottom.classList.remove('visually-hidden');
-      openBottom.classList.toggle('main-footer__open-menu--opened');
-      if (!listTop.classList.contains('visually-hidden')) {
-        listTop.classList.add('visually-hidden');
-        openTop.classList.toggle('main-footer__open-menu--opened');
-      }
-    } else {
-      listBottom.classList.add('visually-hidden');
-      textBottom.classList.add('visually-hidden');
-      openBottom.classList.toggle('main-footer__open-menu--opened');
-    }
-  });
-}
-
 function getBodyScrollTop() {
   return self.pageYOffset || (document.documentElement && document.documentElement.ScrollTop) || (document.body && document.body.scrollTop);
 }
@@ -86,9 +38,14 @@ if (openButton) {
   openButton.addEventListener('click', function (evt) {
     evt.preventDefault();
     if (popup.classList.contains('visually-hidden')) {
+      bodyScrollTop = getBodyScrollTop();
+      body.style.top = '-' + getBodyScrollTop() + 'px';
       var scrollValue = getBodyScrollTop();
+
       bodyScrollTop = scrollValue;
+      body.style.top = '-' + scrollValue + 'px';
       body.classList.add('no-scroll');
+
       popup.classList.remove('visually-hidden');
       body.appendChild(overlay);
     }
@@ -153,4 +110,52 @@ if (featuresLink) {
     evt.preventDefault();
     featuresAnchor.scrollIntoView({block: 'start', behavior: 'smooth'});
   });
+}
+
+//Аккордеон
+if (openTop) {
+  openTop.addEventListener('click', function () {
+    if (listTop.classList.contains('visually-hidden')) {
+      listTop.classList.remove('visually-hidden');
+      openTop.classList.toggle('main-footer__open-menu--opened');
+      if (!listBottom.classList.contains('visually-hidden')) {
+        listBottom.classList.add('visually-hidden');
+        textBottom.classList.add('visually-hidden');
+        openBottom.classList.toggle('main-footer__open-menu--opened');
+      }
+    } else {
+      listTop.classList.add('visually-hidden');
+      openTop.classList.toggle('main-footer__open-menu--opened');
+    }
+  });
+}
+
+if (openBottom) {
+  openBottom.addEventListener('click', function () {
+    if (listBottom.classList.contains('visually-hidden')) {
+      listBottom.classList.remove('visually-hidden');
+      textBottom.classList.remove('visually-hidden');
+      openBottom.classList.toggle('main-footer__open-menu--opened');
+      if (!listTop.classList.contains('visually-hidden')) {
+        listTop.classList.add('visually-hidden');
+        openTop.classList.toggle('main-footer__open-menu--opened');
+      }
+    } else {
+      listBottom.classList.add('visually-hidden');
+      textBottom.classList.add('visually-hidden');
+      openBottom.classList.toggle('main-footer__open-menu--opened');
+    }
+  });
+}
+
+var telOptions = {
+  mask: '+{7}(000)000-00-00'
+};
+
+if (popupTel) {
+  var popupMask = IMask(popupTel, telOptions);
+}
+
+if (contactTel) {
+  var contactMask = IMask(contactTel, telOptions);
 }
