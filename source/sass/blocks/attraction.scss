@@ -3,6 +3,7 @@
   background-color: #1b2d37;
   background-position: 0% 100%;
   margin-bottom: 112px;
+  position: relative;
 }
 
 .webp .attraction {
@@ -35,8 +36,7 @@
   position: relative;
   padding-top: 227px;
   padding-bottom: 265px;
-  // background-image: url("../img/plates-desktop@1x.png"), url("../img/header-shape-desktop.svg");
-  background-position: 105% 62%, 95.5% 61%;
+  background-position: 105.2% 62%, 95.5% 61.4%;
   background-size: 702px, 610px;
   background-repeat: no-repeat, no-repeat;
 }
@@ -51,7 +51,6 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .attraction__wrap {
-    // background-image: url("../img/plates-desktop@2x.png"), url("../img/header-shape-desktop.svg");
     background-size: 702px, 610px;
   }
 
@@ -93,7 +92,7 @@
 
 .attraction h1 {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   line-height: 94px;
@@ -105,7 +104,7 @@
 
 .attraction p {
   margin-top: 0;
-  margin-bottom: 43px;
+  margin-bottom: 44px;
   margin-left: 98px;
   font-family: "PT Mono", "Courier New", monospace;
   font-size: 22px;
@@ -133,8 +132,7 @@
   }
 
   .attraction__wrap {
-    // background-image: url("../img/plates-tablet@1x.png"), url("../img/header-shape-tablet.svg");
-    background-position: 168% 15%, 157.8% 5%;
+    background-position: calc(100% - 18px) 6.3%, calc(100% + 168px) 5%;
     background-repeat: no-repeat, no-repeat;
     background-size: auto, auto;
     padding-top: 115px;
@@ -153,7 +151,6 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .attraction__wrap {
-      // background-image: url("../img/plates-tablet@2x.png"), url("../img/header-shape-tablet.svg");
       background-size: 465px auto, auto;
     }
 
@@ -199,8 +196,7 @@
   }
 
   .attraction__wrap {
-    // background-image: url("../img/plates-mobile@1x.png"), url("../img/header-shape-mobile.svg");
-    background-position: 190% 10%, -100% 6%;
+    background-position: calc(50% - 13px) 0.8%, calc(50% + 228px) 7%;
     background-size: 300px, auto;
     background-repeat: no-repeat, no-repeat;
     padding-left: 0;
@@ -219,8 +215,7 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .attraction__wrap {
-      // background-image: url("../img/plates-mobile@2x.png"), url("../img/header-shape-mobile.svg");
-      background-size: 300px, 300px;
+      background-size: 300px, auto;
     }
 
     .webp .attraction__wrap {
@@ -252,7 +247,7 @@
     margin-left: 50px;
     font-size: 16px;
     line-height: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 
   .attraction p::before {

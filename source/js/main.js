@@ -112,7 +112,7 @@ if (featuresLink) {
   });
 }
 
-//Аккордеон
+// Аккордеон
 if (openTop) {
   openTop.addEventListener('click', function () {
     if (listTop.classList.contains('visually-hidden')) {
@@ -147,6 +147,31 @@ if (openBottom) {
     }
   });
 }
+
+// Отмена аккордеона в планшетной и десктопной версии
+window.addEventListener('resize', function () {
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    if (listTop.classList.contains('visually-hidden')) {
+      listTop.classList.remove('visually-hidden');
+      openTop.classList.toggle('main-footer__open-menu--opened');
+    }
+    if (listBottom.classList.contains('visually-hidden')) {
+      listBottom.classList.remove('visually-hidden');
+      textBottom.classList.remove('visually-hidden');
+      openBottom.classList.toggle('main-footer__open-menu--opened');
+    }
+  } else {
+    if (!listTop.classList.contains('visually-hidden')) {
+      listTop.classList.add('visually-hidden');
+      openTop.classList.toggle('main-footer__open-menu--opened');
+    }
+    if (!listBottom.classList.contains('visually-hidden')) {
+      listBottom.classList.add('visually-hidden');
+      textBottom.classList.add('visually-hidden');
+      openBottom.classList.toggle('main-footer__open-menu--opened');
+    }
+  }
+});
 
 var telOptions = {
   mask: '+{7}(000)000-00-00'

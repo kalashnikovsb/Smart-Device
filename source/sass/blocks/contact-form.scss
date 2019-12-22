@@ -10,9 +10,9 @@
   padding-left: 30px;
   margin: auto;
   display: flex;
-  background-position: 1% 42%, -24% 51%, 95% 20%, 98% 100%;
+  background-position: 0.5% 42.2%, -24% 51%, 95% 20%, 98% 100%;
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: 510px, 615px, auto, auto, auto;
+  background-size: 510px, 610px, auto, auto, auto;
 }
 
 .webp .contact-form__wrap {
@@ -25,7 +25,7 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .contact-form__wrap {
-    background-size: 510px auto, 615px, auto, auto;
+    background-size: 510px, 610px, auto, auto, auto;
   }
 
   .webp .contact-form__wrap {

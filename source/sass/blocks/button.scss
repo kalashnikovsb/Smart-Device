@@ -26,6 +26,7 @@
   width: 180px;
   padding-left: 26px;
   padding-right: 26px;
+  margin-bottom: 1px;
 }
 
 .button--callback:hover,
@@ -40,8 +41,8 @@
   line-height: 19px;
   padding-top: 17px;
   padding-bottom: 20px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
   border: none;
   margin-bottom: 10px;
   background: #00b2ff;
@@ -67,6 +68,7 @@
   padding-right: 50px;
   color: #00b2ff;
   border: 1px solid #00b2ff;
+  width: 180px;
 }
 
 .button--about:hover,
@@ -79,9 +81,10 @@
   flex-shrink: 0;
   background: #00b2ff;
   border: 1px solid #ffffff;
-  padding-left: 79px;
-  padding-right: 79px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-bottom: 40px;
+  width: 270px;
 }
 
 .button--agree:hover,
@@ -123,6 +126,8 @@
     padding-bottom: 15px;
     padding-left: 84px;
     padding-right: 84px;
+    width: 280px;
+    box-sizing: border-box;
   }
 }
 
