@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use strict';
 
 var body = document.querySelector('body');
